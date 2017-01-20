@@ -1,0 +1,103 @@
+/* настройка фона */
+
+body {
+margin: 0;padding: 0;font-family: Arial;text-align: center;}
+
+/*  настройка шапки */
+
+#header {
+width: 100%;border-bottom: 1px solid #dcdcdc;background: url(http://thestudinfo.ru/styles/img/headerbg.jpg) repeat left;height: 75px;z-index: 1000;-moz-opacity: 0.99; /* Mozilla 1.6 Рё РЅРёР¶Рµ */-khtml-opacity: 0.99; /* Konqueror 3.1, Safari 1.1 */opacity: 0.99;font-size: 12px;color: #2e2e2e;-moz-box-shadow: 0px 0px 8px #dcdcdc;-webkit-box-shadow: 0px 0px 8px #dcdcdc;
+}
+.inHeader {
+float: center;background: url(http://thestudinfo.ru/styles/img/logo.png) no-repeat left center;margin: auto;width: 920px;height: 45px;padding: 15px;border-right: 0px solid #dcdcdc;border-left: 0px solid #dcdcdc;}
+
+/*  подстраиваемся под разрешение экрана */
+
+@-webkit-viewport{width:device-width;}@-moz-viewport{width:device-width;}@-ms-viewport{width:device-width;}@-o-viewport{width:device-width;}@viewport{width:device-width;}html{font-size:62.5%;}
+.main-navigation h3.menu-toggle{border:none;border-radius:3px;color:#f1f1f1;font-size:14px;font-size:1.4rem;margin:0;}.main-navigation h3.menu-toggle{line-height:14px;line-height:1.4rem;margin:8px 0;margin:0.8rem 0;}.main-navigation:hover h3.menu-toggle{color:#fff;cursor:pointer;}.main-navigation h3.menu-toggle:after{color:#f1f1f1;content:'\f431';display:inline-block;font:normal 20px/1 'Noticons';margin:-4px -2px 0 4px;margin:-0.4rem -0.2rem 0 -0.4rem;vertical-align:middle;-webkit-font-smoothing:antialiased;}.main-navigation .nav-menu li a:hover{color:#fff;}.main-navigation .nav-menu li a.nav-highlight{background:#36a3ca;display:none;padding:6px 8px;padding:0.6rem 0.8rem;}.main-navigation .nav-menu li a.nav-highlight:before{color:#f1f1f1;content:'\f427';display:inline-block;font:normal 20px/1 'Noticons';margin:-4px 4px 0 -2px;vertical-align:middle;-webkit-font-smoothing:antialiased;}.main-navigation .nav-menu li a.nav-highlight:hover:before{color:#fff;}body.background-pic{background-color:#333;}.page-root{height:98%;position:absolute;top:0;right:0;bottom:0;left:0;text-align:center;}.page-root:before{content:'';display:inline-block;height:100%;margin-right:-0.25em;vertical-align:middle;}@-moz-document url-prefix(){.page-root{margin:8% 0;height:auto;bottom:auto;left:auto;right:auto;top:auto;position:relative;}}.wpcom-header div,
+
+/*  настройка отображение текста и т.п. */
+
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, section, summary, mark, audio, video{border:0;font-size:100%;margin:0;padding:0;text-rendering:optimizeLegibility;vertical-align:baseline;}body{font-family:"Open Sans", sans-serif;}input,
+button,
+textarea,
+select{font-family:"Open Sans", sans-serif;}h1,
+h2,
+h3,
+h4,
+h5,
+h6{font-weight:400;}ol,
+ul{list-style:none;}
+a:focus{outline:thin dotted;}article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section{display:block;}img{border:0;-ms-interpolation-mode:bicubic;}body.he{direction:rtl;}body.he, body.he #home-intro h2{font-family:sans-serif;}a{color:#3f9203;text-decoration:none;}a:hover{color:#009959;}a:active{color:#009959;}::-moz-selection,::selection{background:#009959;color:#fff;}
+
+/*  настройка кнопок*/
+
+.button,
+input[type=submit],
+button{background-color:#ddd;border:1px solid rgba(0,0,0,0.05);border-top-color:rgba(255,255,255,0.1);border-bottom-color:rgba(0,0,0,0.15);border-radius:2px;color:#333;cursor:pointer;display:inline-block;font-size:13px;font-size:1.3rem;font-weight:400;height:auto;line-height:1em;margin-right:3px;margin-right:0.3rem;padding:.6em 1.2em 0.7em;text-align:center;text-decoration:none;background-image:-moz-linear-gradient(top, #f1f1f1 0%, #e5e5e5 100%);background-image:-webkit-linear-gradient(top, #f1f1f1 0%, #e5e5e5 100%);background-image:linear-gradient(to bottom, #f1f1f1 0%, #e5e5e5 100%);}.button:hover,
+input[type=submit]:hover,
+button:hover{background-color:#eee;color:#000;background-image:-moz-linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%);background-image:-webkit-linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%);background-image:linear-gradient(to bottom, #f7f7f7 0%, #e5e5e5 100%);}.button:active,
+input[type=submit]:active,
+button:active{background-color:#eee;background-image:-moz-linear-gradient(top, #ddd 0%, #ccc 100%);background-image:-webkit-linear-gradient(top, #ddd 0%, #ccc 100%);background-image:linear-gradient(to bottom, #ddd 0%, #ccc 100%);}.button-highlighted{background-color:#3C9300;border-top-color:rgba(0,0,0,0.1);color:#fff;background-image:-moz-linear-gradient(top, #3C9300 0%, #368200 100%);background-image:-webkit-linear-gradient(top, #3C9300 0%,#368200 100%);background-image:linear-gradient(to bottom, #3C9300 0%,#368200 100%);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}.button-highlighted:hover{background-color:#3C9300;background-image:-moz-linear-gradient(top, #3C9300 0%,#368200 100%);background-image:-webkit-linear-gradient(top, #3C9300 0%,#368200 100%);background-image:linear-gradient(to bottom, #3C9300 0%,#368200 100%);}.button-highlighted:active{color:#fff;color:rgba(255,255,255,0.9);background-image:-moz-linear-gradient(top, #368200 0%,#3C9300 100%);background-image:-webkit-linear-gradient(top, #3A8E00 0%,#3A8E00 100%);background-image:linear-gradient(to bottom, #3A8E00 0%,#3A8E00 100%);border: 1px solid #2D6200 !important;}.button-highlighted:hover{color:#fff;border: 1px solid #2D6200 !important;}.button-primary,
+input.button-primary{background-color:#3A8E00;border: 1px solid #2D6200 !important;border-top-color:rgba(0,0,0,0.05);color:#fff;background-image:-moz-linear-gradient(top, #3C9300 0%, #368200 100%);background-image:-webkit-linear-gradient(top, #3C9300 0%, #368200 100%);background-image:linear-gradient(to bottom, #3C9300 0%, #368200 100%);}.button-primary:hover,
+input.button-primary:hover{color:#fff;background-image:-moz-linear-gradient(top, #3A8E00 0%, #3A8E00 100%);background-image:-webkit-linear-gradient(top, #3A8E00 0%,#3A8E00 100%);background-image:linear-gradient(to bottom, #3A8E00 0%,#3A8E00 100%);}.button-primary:active,
+input.button-primary:active{color:rgba(255,255,255,0.9);background-image:-moz-linear-gradient(top, #3C9300 0%, #368200 100%);background-image:-webkit-linear-gradient(top, #3C9300 0%, #368200 100%);background-image:linear-gradient(to bottom, #3C9300 0%, #368200 100%);}
+
+/* основной блок */
+
+.home-grid{margin:0 auto;width:940px;width:94rem;}.home-grid{display:inline-block;height:auto;padding:59px 0 0;vertical-align:middle;}.home-grid .home-box{background:#fff;border-bottom: #c5c5c5 2px solid;float:left;text-align:left;-moz-opacity: 0.99;-khtml-opacity: 0.99; /* Konqueror 3.1, Safari 1.1 */opacity: 0.98;font-size: 12px;color: #2e2e2e;position:relative;width:298px;width:29.8rem;-moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.15);}.home-box div{height:auto;padding:20px;padding:2rem;}.home-box h3{font-size:16px;font-size:1.6rem;line-height:20px;line-height:2rem;margin-bottom:18px;margin-bottom:1.8rem;}.home-box p{color:#999;font-size:13px;font-size:1.3rem;line-height:20px;line-height:2rem;}
+
+
+/* блок с промо */
+
+.home-grid #home-intro{background-color:#fff;background-image:url(http://thestudinfo.ru/styles/img/glav_3.png); background-position:center 270px;background-repeat:no-repeat;background-size:556px auto;height:370px;height:37rem;margin-right:16px;margin-right:1.6rem;width:626px;width:62.6rem;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}.home-grid #home-intro{float:right;margin-right:0;margin-left:16px;margin-left:1.6rem;}#home-intro a{height:100%;display:block;width:100%;z-index:999;}#home-intro h2{color:#aaa;display:inline-block;float:right;font-family:"Merriweather", serif;font-size:26px;font-size:2.6rem;font-weight:200;line-height:40px;line-height:4rem;margin:67px 20px 0 0;margin:6.7rem 2rem 0 0;width:310px;width:31rem;}#home-intro strong{background-image:url(http://thestudinfo.ru/styles/img/glav_1.png);background-position:center center;background-repeat:no-repeat;background-size:224px 213px;color:#fff;display:block;float:left;font-size:20px;font-size:2rem;font-weight:300;height:213px;height:21.3rem;margin:35px 0 0 35px;margin:3.5rem 0 0 3.5rem;text-align:center;vertical-align:middle;width:224px;width:22.4rem;}.no-svg #home-intro strong{background-image:url(../images/speech.png);}#home-intro strong span{background-image:url(http://thestudinfo.ru/styles/img/glav_2.png);background-position:top center;background-repeat:no-repeat;background-size:57px 65px;display:inline-block;height:66px;height:6.6rem;margin:19% auto;padding-top:80px;padding-top:8rem;width:200px;width:20rem;}.no-svg #home-intro strong span{background-image:url(../images/play.png);}#home-intro a:hover strong span{background-image:url(http://thestudinfo.ru/styles/img/glav_5.png);}
+
+/* блок с регистрацией */
+
+.home-grid #home-signup{float:right;height:auto;margin-bottom:14px;}.home-box .button-highlighted{width:100%;padding:13px 0 15px;padding:1.3rem 0 1.5rem;font-size:22px;font-size:2.2rem;}
+
+/* блок с формой входа */
+
+.home-grid #home-signin{float:right;height:219px;height:21.9rem;}.home-box input{display:block;}.home-box input[type=checkbox],
+.home-box input[type=submit]{display:inline-block;margin:0;}#home-signin input[type=checkbox]{background:#fcfcfc;border:px solid #bbb;border-radius:0;clear:none;cursor:pointer;display:inline-block;line-height:16px;line-height:1.6rem;height:16px;height:1.6rem;margin:-5px 4px 0 0;margin:-0.1rem 0.2rem 0 0;text-align:center;vertical-align:middle;width:16px;width:1.6rem;}#home-signin input[type=checkbox]:checked:before{}#home-signin input[type=checkbox]:hover:checked:before,
+#home-signin input[type=checkbox]:focus:checked:before{color:#333;}.home-box input[type=text],
+.home-box input[type=email],
+.home-box input[type=password]{background:#fcfcfc;border:1px solid #ccc;border-radius:0;font-size:16px;font-size:1.6rem;margin-bottom:14px;margin-bottom:1.4rem;padding:8px 16px 8px 12px;padding:0.8rem 1.6rem 0.8rem 1.2rem;width:100%;-webkit-appearance:none;-moz-appearance:none;appearance:none;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-moz-box-shadow:inset 2px 2px 3px rgba(0,0,0,0.1);-webkit-box-shadow:inset 2px 2px 3px rgba(0,0,0,0.1);box-shadow:inset 2px 2px 3px rgba(0,0,0,0.1);}.home-box input::-moz-placeholder,
+.home-box input::-webkit-input-placeholder{color:#bbb;}.home-box input.placeholder{color:#999;}.home-box input[type=text]:hover,
+.home-box input[type=email]:hover,
+.home-box input[type=password]:hover,
+.home-box input[type=text]:focus,
+.home-box input[type=email]:focus,
+.home-box input[type=password]:focus,
+#home-signin input[type=checkbox]:hover,
+#home-signin input[type=checkbox]:focus{background-color:#f7f7f7;}.home-box input:hover::-moz-placeholder,
+.home-box input:hover::-webkit-input-placeholder,
+.home-box input:focus::-moz-placeholder,
+.home-box input:focus::-webkit-input-placeholder,
+#home-signin input:hover::-moz-placeholder:before,
+#home-signin input:hover::-webkit-input-placeholder:before,
+#home-signin input:focus::-moz-placeholder:before,
+#home-signin input:focus::-webkit-input-placeholder:before{color:#999;}#home-signin input::-moz-placeholder:before,
+#home-signin input::-webkit-input-placeholder:before{color:#ccc;content:'\f304';display:inline-block;font:normal 24px/1 'Noticons';margin:-4px 4px 0 -6px;vertical-align:middle;-webkit-font-smoothing:antialiased;}#home-signin input[type=email]::-moz-placeholder:before,
+#home-signin input[type=email]::-webkit-input-placeholder:before{content:'\f304';}#home-signin input[type=password]::-moz-placeholder:before,
+#home-signin input[type=password]::-webkit-input-placeholder:before{content:'\f427';font-size:20px;font-size:2rem;margin:-3px 6px 0 -4px;margin:-0.3rem 0.6rem 0 -0.4rem;}.home-box input[type=submit]{float:right;margin-right:0;}.home-box input[type=checkbox]{cursor:pointer;line-height:32px;line-height:3.2rem;}.home-box label{color:#888;cursor:pointer;font-size:11px;font-size:1.1rem;line-height:32px;line-height:3.2rem;}.home-box a.password-help{color:#888;float:right;font-size:11px;font-size:1.1rem;line-height:32px;line-height:3.2rem;margin-right:10px;margin-right:1rem;text-decoration:underline;}.home-box a.password-help:hover,
+.home-box label:hover,
+.home-box input:hover+label{color:#555;}#home-discover{margin-top:16px;margin-top:1.6rem;width:100%;text-align:center;}#home-discover h3,
+
+/* блок вызова специалиста */
+
+#home-discover a.button{display:inline-block;}#home-discover h3{margin:0 20px 0 0;margin:0 2rem 0 0;line-height:1.4;}#home-discover a.button{padding:15px 20px;font-size:16px;font-size:1.6rem;font-weight:200;}
+
+/* Настройка футера */
+
+#footer {background-color:rgba(0, 0, 0, 0.8);color:#e0e0e0;font-size:1.1em;overflow:hidden;position:fixed;padding:10px;bottom:0;left:0;right:0;} #footer a{color:#e0e0e0;} #footer a:hover{color:#f0f0f0;} #home-colophon ul{list-style:none;padding:0;}#footer ul li,#footer-sts{display:block;padding:5px 7px;}#footer ul li{float:left;}.footer-sts{float:right;right:0; background: url(http://thestudinfo.ru/styles/img/glav_4.png) no-repeat;margin: auto; width: 230px; height: 26px; opacity:0.5; filter:alpha(opacity=50);}.footer-sts:hover {-moz-transition: all 0.4s; -webkit-transition: all 0.4s;  -ms-transition: all 0.4s;  -o-transition: all 0.4s;  transition: all 0.4s; opacity:1;filter:alpha(opacity=100);}
+

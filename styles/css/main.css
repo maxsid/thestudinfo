@@ -1,0 +1,103 @@
+/** Блок, задает дизайн фона и элементов сайта (заголовки, кнопки, формы и тому подобные) **/
+
+body {
+	background: url(../img/latar.jpg);
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 12px;
+	color: #2e2e2e;
+	text-align: center;
+}
+.clear {clear: both;}
+small {font-size: 11px; color: 5b5b5b;}
+img {border: none;}
+a {color: #527e19; text-decoration: none;}
+a:hover {color: #000;}
+label {padding: 0; margin: 0 0 10px 0;}
+input {padding: 4px;color: #5b5b5b;border: 1px solid #dcdcdc;-moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius: 3px;height: 29px; width: 715px; font-size: 12px;
+}
+#input2 {padding: 4px;color: #5b5b5b;border: 1px solid #dcdcdc;-moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius: 3px;height: 29px; width: 215px; margin-right: 5px;font-size: 12px;}
+#input3 {padding: 4px;color: #5b5b5b;border: 1px solid #dcdcdc;-moz-border-radius: 3px;-webkit-border-radius: 3px;-o-border-radius: 3px;height: 29px;width: 100%;margin-right: 5px;font-size: 12px;}
+#input4 {padding: 4px;color: #5b5b5b;border: 0px solid #dcdcdc;height: 29px; width: 734px; font-size: 12px;}
+
+/** Отступ для блока новостей **/
+
+ .otstup_news {margin: 10 10 10 10;}
+
+/** Блок аватара в левом блоке **/
+
+.ava {overflow: hidden;position: relative;display: inline-block;}
+.ava:hover {cursor: pointer;}
+.ava img {border: none;margin: 0;padding: 10px;}
+.ava .more {background-color: #123;color: #FFF;font-size: 14px;padding: 5px 10px;filter:alpha(opacity=0);opacity:.0;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';position: absolute;right: 10px; bottom: 10px;}
+.ava:hover .more {display: none;}
+.ava .desc {display: none;}
+.ava:hover .desc {background-color:#345;display: block;margin: 0;color: #FFF;font-size: 12px;padding: 10px;filter:alpha(opacity=75);opacity:.75; -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=75)'; position: absolute; bottom: 10px; left: 10px; right: 10px;}
+.ava:hover .desc strong { display: block;font-size: 14px;line-height: 1em;}
+
+/** Шапка сайта **/
+
+#header {width: 100%;border-bottom: 1px solid #dcdcdc;background: url(../img/headerbg.jpg) repeat left;height: 75px;z-index: 1000;-moz-box-shadow: 0px 0px 8px #dcdcdc;-webkit-box-shadow: 0px 0px 8px #dcdcdc;}
+.inHeader {float: center;background: url(../img/logo.png) no-repeat left center;margin: auto;width: 920px;height: 45px;padding: 15px;border-right: 0px solid #dcdcdc;border-left: 0px solid #dcdcdc;}
+.inHeaderLogin {	background: url(../img/logo.png) no-repeat left center;height: 75px;}
+.mosAdmin {float: right;border: 0px solid #dcdcdc;margin: 0 1px 0 auto;text-align: right;padding: 10px 40px 10px 10px;background: url(../img/Administrator.png) no-repeat right center;text-shadow: 1px 1px #fff;}
+
+/** Основной блок, тело сайта **/
+
+#wrapper {width: 950px;padding: 0px 0 0 0;position: relative;border-left: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc;border-bottom: 1px solid #dcdcdc;float: center;margin: auto;text-align: left;background: #f6f6f6;-moz-box-shadow: 0px 0px 8px #dcdcdc;-webkit-box-shadow: 0px 0px 8px #dcdcdc;}
+
+/** Левый блок **/
+
+#leftBar {width: 200px;float: left;padding: 0 0 0 6px;text-align: left;}
+#leftBar ul {list-style: none;padding-left:0px;font-size: 13px;}
+#leftBar li {margin:0 0 0 0px; padding:0;}
+#leftBar li a {color: #272727;font-size: 13px;text-decoration: none;padding: 11px 3px 11px 37px;display: block;background: 10px no-repeat;}
+#leftBar li a:hover {background-color:#eee;}
+#leftBar li a:active {background-color:#cfcfcf !important}
+
+/** Правый блок **/
+
+#rightContent {width: 734px;	float: right;border-left: 0px solid #dcdcdc;text-align: left;background: #fff;border-bottom: #c5c5c5 2px solid;margin-bottom: 9px;margin-right: 5px;}
+#rightContentNews {width: 734px;	float: right;border-left: 0px solid #dcdcdc;text-align: left;border-bottom: #c5c5c5 5px solid;margin-bottom: 90px;margin-right: 5px;}
+#rightContent h2 {font-size: 17px; font-weight: bold; padding: 0; margin: 10px 0px 8px 10px;}
+#rightContent h3 {font-size: 20px; font-weight: normal; padding: 0; margin: 25px 0px 5px 25px; border-bottom: 1px dashed #dcdcdc; }
+#rightContent h4 {font-size: 15px; font-weight: normal; padding: 0; margin: 0px 0px 5px 29px;  }
+#rightContent h5 {font-size: 12px; font-weight: bold; padding: 0; margin: 10px 0px 2px 2px; }
+.shortcutHome a{width: 65px;padding: 18px;border: 1px solid #dcdcdc;height: 100px;float: left;margin: 10px 0 10px 17px;text-align: center;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;}
+.shortcutHome a:hover{color: #5b5b5b;text-decoration: none;}
+.shortcutHome a:hover img{opacity: 1;	color: #5b5b5b;	padding-top: 10px;}
+.shortcutHome img {opacity: 0.8;-webkit-transition: padding-top 250ms ease-out;-moz-transition: padding-top 250ms ease-out;-o-transition: padding-top 250ms ease-out;}
+#smallRight {width: 315px;padding: 5px 10px 5px 20px;margin: 10px;border: 1px solid #dcdcdc;float: left;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;}
+#smallRight h3 {font-size: 16px; padding: 5px; margin: 0px; border-bottom: 1px solid #dcdcdc;}
+
+/** Блок задает дизайн новостей  **/
+ 
+#news_dvig {width: 734px;	float: right;border-left: 2px solid #c6dd98;text-align: left;background: #fff;border-bottom: #c5c5c5 2px solid;margin-bottom: 9px;margin-right: 5px;}	
+#news_dvig h5 {display: block;font-size: 0.83em;margin: 10px 10px 10px 10px !important; font-weight: bold;}
+#news_dvig h3{font-size: 20px; font-weight: normal; padding: 0; margin: 5px 15px 5px 12px;  }
+#news_dvig_menu {width: 734px;	height: 38px;float: right;padding: 0;text-align: left;background: #fff;border-bottom: #c5c5c5 2px solid;margin-bottom: 9px;margin-right: 5px;}
+#news_dvig_menu ul {list-style: none;padding: 0;margin: 11px 0 11px 0;font-size: 13px;}
+#news_dvig_menu li {display: inline;margin:0px; height: 100%;padding:0;}
+#news_dvig_menu li a {color: #272727;font-size: 13px;text-decoration: none;padding: 11px 37px 11px 37px;display: inline;background: 10px no-repeat;}
+#news_dvig_menu li a:hover {background-color:#def2b4;}
+#news_dvig_menu li.active a {background-color:#cce696;border-bottom: #949494 2px solid;}
+
+/** Подвал сайта **/
+
+#footer {width: 950px;padding: 15px 0 15px 0;text-align: center;font-size: 11px;border-top: 1px solid #dcdcdc;background: #fff;}
+.short-news{color: #565656;width: 734px;height: 120px;	float: right;border-left: 0px solid #dcdcdc;text-align: left;background: #fff;border-bottom: #c5c5c5 2px solid;margin-bottom: 8px;margin-right: 5px;}
+.short-date{font-family: "Segoe UI Light", "Segoe UI", Tahoma, Arial, verdana, sans-serif;font-size: 30px;width: 90px;height: 90px;margin-top: 30px;margin-left: 5px;float: left;font-weight: 100;}
+.short-date span{display: block;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;font-size: 12px;}
+.short-image{width: 230px;position: relative;float: left;border: 1px #ccc solid;}
+.short-image img{border: 0;width: 230px;}
+.short-content{margin-left: 60px;margin-bottom: 17px;width: 640px;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;font-size: 13px;}
+.short-content h1 a{text-decoration: none;font-size: 24px;display: block;color: #565656;}
+.short-content h1 a:visited{color: #565656;}
+.short-content h1 a:hover{text-decoration: underline;}
+.news_dvig {margin-left: 0px;width: 733px;	float: right;border-left: 2px solid #c6dd98;text-align: left;background: #fff;border-bottom: #c5c5c5 2px solid;margin-bottom: 9px;}
+.news_dvig h3{font-size: 20px; font-weight: normal; padding: 0; margin: 5px 15px 5px 12px;  }
+
+/** Кнопка вверх **/
+#top {background: #f7ffe8 url() no-repeat;bottom: 5px;cursor: pointer; display: none;font-size: 150%;position: fixed; left: 5px;opacity:0.4;  transition: 2s linear;}
+#top:hover {opacity: 1;}
