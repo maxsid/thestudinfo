@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 19.05.14
  * Time: 20:37
  */
@@ -13,13 +13,13 @@ $journal = new journal($_GET['g']);
 $lessons = $journal->getLessonsForWeek($week,$year);
 //$lessons = $journal->getLessonsForWeekGroupByTimeAndDate($week,$year);
 if (is_null($lessons)) {
-    print '<h4><b>Расписание на эту неделю не заполнено!</b></h4>';
+    print '<h4><b>Р Р°СЃРїРёСЃР°РЅРёРµ РЅР° СЌС‚Сѓ РЅРµРґРµР»СЋ РЅРµ Р·Р°РїРѕР»РЅРµРЅРѕ!</b></h4>';
     return;
 }
 print '<table class="tables">
             <thread>
                 <tr>';
-//print '             <th>Час</th>';
+//print '             <th>Р§Р°СЃ</th>';
 for($i = 0, $print = true;$i < 7;$i++, $print = true)
 {
     $date = text::getDayWeek($week,$year,$i);
@@ -42,7 +42,7 @@ for ($i = 0; $i < $lessons['maxInDay']/*count($lessons['hour'])*/; $i++)
     //print '<td>'.$lessons['hour'][$i].':00</td>';
     for ($j = 0; $j < 7; $j++)
     {
-        //Убираем выходные из таблицы
+        //РЈР±РёСЂР°РµРј РІС‹С…РѕРґРЅС‹Рµ РёР· С‚Р°Р±Р»РёС†С‹
         $print = true;
         foreach ($lessons['weekend'] as $row) {
             if (text::getDayWeek($week,$year,$j) == $row) {
@@ -75,13 +75,13 @@ for ($i = 0; $i < $lessons['maxInDay']/*count($lessons['hour'])*/; $i++)
 }
 print '     </tbody>
         </table>';
-print '<H4><b>*Выходные дни: ';
+print '<H4><b>*Р’С‹С…РѕРґРЅС‹Рµ РґРЅРё: ';
 foreach ($lessons['weekend'] as $key=>$w) {
     print text::dayWeekOnNumWithSunday(text::parseDate($w,'w')).'('.$w.')';
     if ($key + 1 < count($lessons['weekend'])) {
         print ', ';
     } elseif ($key + 2 < count($lessons['weekend'])) {
-        print ' и ';
+        print ' Рё ';
     }
 }
 print '.</b></H4>';

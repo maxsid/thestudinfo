@@ -1,5 +1,5 @@
 /**
- * Created by Максим Сидоров on 07.06.14.
+ * Created by РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ on 07.06.14.
  */
 var inst = '',
     group = '';
@@ -17,7 +17,7 @@ function lockGroup() {
 
 $('#next').click(function(){
     if (!userTeacher.checked && !userStudent.checked) {
-        $('#message').html('Вы студент или преподаватель? <br> Необходимо выбрать.');
+        $('#message').html('Р’С‹ СЃС‚СѓРґРµРЅС‚ РёР»Рё РїСЂРµРїРѕРґР°РІР°С‚РµР»СЊ? <br> РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ.');
         return;
     }
     var stud = String(userStudent.checked);
@@ -29,28 +29,28 @@ $('#next').click(function(){
 
     switch ('') {
         case inst:
-            $('#message').html('Не выбрано учебное учреждение.<br>(Необходимо выбрать из выпадающего списка)');
+            $('#message').html('РќРµ РІС‹Р±СЂР°РЅРѕ СѓС‡РµР±РЅРѕРµ СѓС‡СЂРµР¶РґРµРЅРёРµ.<br>(РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР°)');
             return;
         case name:
-            $('#message').html('Имя не введено.');
+            $('#message').html('РРјСЏ РЅРµ РІРІРµРґРµРЅРѕ.');
             return;
         case lastname:
-            $('#message').html('Фамилия не введена.');
+            $('#message').html('Р¤Р°РјРёР»РёСЏ РЅРµ РІРІРµРґРµРЅР°.');
             return;
         case patronymic:
-            $('#message').html('Отчество не введено.');
+            $('#message').html('РћС‚С‡РµСЃС‚РІРѕ РЅРµ РІРІРµРґРµРЅРѕ.');
             return;
         case email:
-            $('#message').html('Email не введен.');
+            $('#message').html('Email РЅРµ РІРІРµРґРµРЅ.');
             return;
         case group:
             if (userStudent.checked) {
-                $('#message').html('Не выбрана группа.<br>(Необходимо выбрать из выпадающего списка)');
+                $('#message').html('РќРµ РІС‹Р±СЂР°РЅР° РіСЂСѓРїРїР°.<br>(РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР°)');
                 return;
             }
     }
 
-    $('#regPage').html('Загрузка...');
+    $('#regPage').html('Р—Р°РіСЂСѓР·РєР°...');
     $('#regPage').load('/register/send.php' +
         '?i=' + inst +
         '&t=' + stud +

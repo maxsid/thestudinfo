@@ -81,10 +81,10 @@ class message {
 
         switch ($this->date){
             case ($today):
-                return "Ñåãîäíÿ";
+                return "Ğ¡ĞµĞ³Ğ¾Ğ´Ğ½Ñ";
                 break;
             case ($yesterday):
-                return "Â÷åğà";
+                return "Ğ’Ñ‡ĞµÑ€Ğ°";
                 break;
             default:
                 return $this->date;

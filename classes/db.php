@@ -45,7 +45,7 @@ class db {
     }
 
     /**
-     * Выполнение запроса выбора (SELECT) к БД.
+     * Р’С‹РїРѕР»РЅРµРЅРёРµ Р·Р°РїСЂРѕСЃР° РІС‹Р±РѕСЂР° (SELECT) Рє Р‘Р”.
      *
      * @param string|array $table
      * @param array|null|string $select

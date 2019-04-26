@@ -12,7 +12,7 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 
 		 ';
@@ -26,18 +26,18 @@ $news = new news($_GET['i']);
 
 if (!$news->hasAccess($my->group) or $news->text == null)
 {
-    exit("У вас нет доступа к этой новости!");
+    exit("РЈ РІР°СЃ РЅРµС‚ РґРѕСЃС‚СѓРїР° Рє СЌС‚РѕР№ РЅРѕРІРѕСЃС‚Рё!");
 }
 
 $author = new user();
 $author->otherUser($news->author);
 
 print '<div id="news_dvig">
-<H5>Опубликовано '.$news->getDate().' в '.$news->time.'<br>
-        Автор: '.$author->getFullName(false,true).' ('.$author->getGroup().')</H5></div>';
+<H5>РћРїСѓР±Р»РёРєРѕРІР°РЅРѕ '.$news->getDate().' РІ '.$news->time.'<br>
+        РђРІС‚РѕСЂ: '.$author->getFullName(false,true).' ('.$author->getGroup().')</H5></div>';
 print '<div id="rightContent"><H2>'.$news->name.'</H2></div><div id="rightContent"><div class="otstup_news">';
 print $news->text;
 print '</div></div><div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div>';

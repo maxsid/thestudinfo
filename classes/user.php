@@ -38,18 +38,18 @@ class user
     function register($otherData = '')
     {
         if (!$this->checkEmail()) {
-            return 'Ваш email уже зарегистрирован!';
+            return 'Р’Р°С€ email СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ!';
         }
         if (!$this->student) {
             if ($this->teacher) {
                 $this->group = group::TEACHER_GROUP_ID;
-                $strPost = 'Преподаватель';
+                $strPost = 'РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ';
             } else {
                 $this->group = group::ADMINISTRATION_GROUP_ID;
-                $strPost = 'Работник администрации';
+                $strPost = 'Р Р°Р±РѕС‚РЅРёРє Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё';
             }
         } else {
-            $strPost = 'Студент';
+            $strPost = 'РЎС‚СѓРґРµРЅС‚';
         }
 
         $query = ("INSERT INTO `studinfo`.`users`
@@ -70,8 +70,8 @@ class user
                         VALUES (`$this->id`,`$this->teacher`)";
         }
         $this->db->query($query);
-        //Рассылка сообщения
-        ////Сбор получателей
+        //Р Р°СЃСЃС‹Р»РєР° СЃРѕРѕР±С‰РµРЅРёСЏ
+        ////РЎР±РѕСЂ РїРѕР»СѓС‡Р°С‚РµР»РµР№
         $rec = array();
         if ($this->student) {
             $group = $this->getObjectGroup();
@@ -87,24 +87,24 @@ class user
             unset($inst);
             unset($admins);
         }
-        ////Заполнение и отправка сообщения
+        ////Р—Р°РїРѕР»РЅРµРЅРёРµ Рё РѕС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ
         $message = new message();
-        $message->fillAndSend(0, 'Запрос на регистрацию',
-            'Здравствуйте. ' . $strPost . ' ' . $this->getFullName() . ' запрашивает подтверждение регистрации.<br>
-            Пользователь указал следующие данные:<br>' .
+        $message->fillAndSend(0, 'Р—Р°РїСЂРѕСЃ РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЋ',
+            'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ. ' . $strPost . ' ' . $this->getFullName() . ' Р·Р°РїСЂР°С€РёРІР°РµС‚ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ СЂРµРіРёСЃС‚СЂР°С†РёРё.<br>
+            РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СѓРєР°Р·Р°Р» СЃР»РµРґСѓСЋС‰РёРµ РґР°РЅРЅС‹Рµ:<br>' .
             'Email: ' . $this->email . '<br>' .
-            'Другое:<br>' .
+            'Р”СЂСѓРіРѕРµ:<br>' .
             $otherData . '
             <div id="checkReg' . $this->id . '"></div>
             <script>
                 $("#checkReg' . $this->id . '").load("/register/check.php?u=' . $this->id . '");
             </script>'
             , $rec);
-        //Отправилось
-        return "Уважаемый(ая) $this->name $this->patronymic.<br>
-        Ваша регистрация на сайте <a href='http://thestudinfo.ru'>theStudInfo.ru</a> добавлена в базу данных и ждет подтверждения.<br>
-        После подтверждения ваш логин и пароль будут отправлены на $this->email. <br>
-        Спасибо, что вы с нами!";
+        //РћС‚РїСЂР°РІРёР»РѕСЃСЊ
+        return "РЈРІР°Р¶Р°РµРјС‹Р№(Р°СЏ) $this->name $this->patronymic.<br>
+        Р’Р°С€Р° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° СЃР°Р№С‚Рµ <a href='http://thestudinfo.ru'>theStudInfo.ru</a> РґРѕР±Р°РІР»РµРЅР° РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… Рё Р¶РґРµС‚ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ.<br>
+        РџРѕСЃР»Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РІР°С€ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ Р±СѓРґСѓС‚ РѕС‚РїСЂР°РІР»РµРЅС‹ РЅР° $this->email. <br>
+        РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РІС‹ СЃ РЅР°РјРё!";
     }
 
     private function generateLoginAndPassword()
@@ -151,19 +151,19 @@ class user
             $this->db->query($query);
             $enterData = $this->generateLoginAndPassword();
             if (isset($this->email)) {
-                //Отправка письма
+                //РћС‚РїСЂР°РІРєР° РїРёСЃСЊРјР°
                 $mail = new PHPMailer();
                 $mail->isHTML();
-                $mail->CharSet = 'windows-1251';
-                $mail->Body = "Здравствуйте " . $this->getFullName() . "<br>
-                Ваша учетная запись на <a href='http://thestudinfo.ru'>theStudInfo</a> была подтвержденна." .
-                    "Ваши данные для входа:<br>" .
-                    "Логин:" . $enterData['login'] . "<br>" .
-                    "Пароль:" . $enterData['password'] . "<br>" .
-                    "Спасибо, что вы с нами!";
-                $mail->SetFrom('admin@thestudinfo.ru', 'Администрация theStudInfo.ru');
+                $mail->CharSet = 'utf-8';
+                $mail->Body = "Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ " . $this->getFullName() . "<br>
+                Р’Р°С€Р° СѓС‡РµС‚РЅР°СЏ Р·Р°РїРёСЃСЊ РЅР° <a href='http://thestudinfo.ru'>theStudInfo</a> Р±С‹Р»Р° РїРѕРґС‚РІРµСЂР¶РґРµРЅРЅР°." .
+                    "Р’Р°С€Рё РґР°РЅРЅС‹Рµ РґР»СЏ РІС…РѕРґР°:<br>" .
+                    "Р›РѕРіРёРЅ:" . $enterData['login'] . "<br>" .
+                    "РџР°СЂРѕР»СЊ:" . $enterData['password'] . "<br>" .
+                    "РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РІС‹ СЃ РЅР°РјРё!";
+                $mail->SetFrom('admin@thestudinfo.ru', 'РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ theStudInfo.ru');
                 $mail->AddAddress($this->email, $this->getFullName());
-                $mail->Subject = "Регистрация на theStudInfo";
+                $mail->Subject = "Р РµРіРёСЃС‚СЂР°С†РёСЏ РЅР° theStudInfo";
                 $mail->Send();
                 //
             }
@@ -220,7 +220,7 @@ class user
     public function otherUser($id)
     {
         if ($id == 0) {
-            $this->fillUser(0, '', 'Администрация ресурса', '', '', 0, 0, 'admins@studinfo.ru', false, false, false, '');
+            $this->fillUser(0, '', 'РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ СЂРµСЃСѓСЂСЃР°', '', '', 0, 0, 'admins@studinfo.ru', false, false, false, '');
             return true;
         }
         $query = "SELECT * FROM `users` WHERE `id`=" . $id . ";";
@@ -347,9 +347,9 @@ class user
     {
         switch ($this->group) {
             case group::TEACHER_GROUP_ID:
-                return 'Преподаватели';
+                return 'РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё';
             case group::ADMINISTRATION_GROUP_ID:
-                return 'Администрация';
+                return 'РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ';
         }
         $groupName = $this->db->singleResult("SELECT `name` FROM `group` WHERE `id`= " . $this->group . ";");
         return $groupName;
@@ -422,20 +422,20 @@ class user
         $this->db->query($query);
         $this->deleteRegistration();
         if (isset($this->email)) {
-            //Отправка письма
+            //РћС‚РїСЂР°РІРєР° РїРёСЃСЊРјР°
             $mail = new PHPMailer();
-            $mail->CharSet = 'windows-1251';
+            $mail->CharSet = 'utf-8';
             $mail->isHTML();
-            $mail->Body = "Здравствуйте " . $this->getFullName() . "<br>
-            Регистрация вашей учетной записи на <a href='http://thestudinfo.ru'>theStudInfo</a> была отклонена.<br>";
+            $mail->Body = "Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ " . $this->getFullName() . "<br>
+            Р РµРіРёСЃС‚СЂР°С†РёСЏ РІР°С€РµР№ СѓС‡РµС‚РЅРѕР№ Р·Р°РїРёСЃРё РЅР° <a href='http://thestudinfo.ru'>theStudInfo</a> Р±С‹Р»Р° РѕС‚РєР»РѕРЅРµРЅР°.<br>";
             if ($this->student) {
-                $mail->Body .= "Рекомендуем обратиться к старосте или куратору вашей группы.";
+                $mail->Body .= "Р РµРєРѕРјРµРЅРґСѓРµРј РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє СЃС‚Р°СЂРѕСЃС‚Рµ РёР»Рё РєСѓСЂР°С‚РѕСЂСѓ РІР°С€РµР№ РіСЂСѓРїРїС‹.";
             } else {
-                $mail->Body .= "Рекомендуем обратиться к администрации вашего учебного заведения.";
+                $mail->Body .= "Р РµРєРѕРјРµРЅРґСѓРµРј РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё РІР°С€РµРіРѕ СѓС‡РµР±РЅРѕРіРѕ Р·Р°РІРµРґРµРЅРёСЏ.";
             }
-            $mail->SetFrom('admin@thestudinfo.ru', 'Администрация theStudInfo.ru');
+            $mail->SetFrom('admin@thestudinfo.ru', 'РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ theStudInfo.ru');
             $mail->AddAddress($this->email, $this->getFullName());
-            $mail->Subject = "Регистрация на theStudInfo";
+            $mail->Subject = "Р РµРіРёСЃС‚СЂР°С†РёСЏ РЅР° theStudInfo";
             $mail->Send();
         }
     }

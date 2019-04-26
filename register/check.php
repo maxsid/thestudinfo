@@ -1,29 +1,29 @@
 <?
 include_once('../classes/autoloadClasses.php');
 if (!isset($_GET['u'])){
-    exit('Произошла ошибка! Невозможно определить пользователя в базе.');
+    exit('РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°! РќРµРІРѕР·РјРѕР¶РЅРѕ РѕРїСЂРµРґРµР»РёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ Р±Р°Р·Рµ.');
 }
 
 if (isset($_GET['b'])){
     $user = new user($_GET['u']);
     if ((boolean)$_GET['b']) {
         $user->confirmRegistration();
-        exit('<h4>Регистрация принята</h4>');
+        exit('<h4>Р РµРіРёСЃС‚СЂР°С†РёСЏ РїСЂРёРЅСЏС‚Р°</h4>');
     } else {
         $user->deleteRegisterUser();
-        exit('<h4>В регистрации отказано</h4>');
+        exit('<h4>Р’ СЂРµРіРёСЃС‚СЂР°С†РёРё РѕС‚РєР°Р·Р°РЅРѕ</h4>');
     }
 } else {
     if (user::checkUserId($_GET['u'])){
         $user = new user($_GET['u']);
         if ($user->confirmed){
-            exit('<h4>Регистрация принята</h4>');
+            exit('<h4>Р РµРіРёСЃС‚СЂР°С†РёСЏ РїСЂРёРЅСЏС‚Р°</h4>');
         } else {
             exit('
-                    <a href="javascript:{}" onclick="$(\'#checkReg'.$_GET['u'].'\').html(\'Загрузка...\');$(\'#checkReg'.$_GET['u'].'\').load(\'/register/check.php?u='.$_GET['u'].'&b=1\')">Принять</a>
-                    <a href="javascript:{}" onclick="$(\'#checkReg'.$_GET['u'].'\').html(\'Загрузка...\');$(\'#checkReg'.$_GET['u'].'\').load(\'/register/check.php?u='.$_GET['u'].'&b=0\')">Отклонить</a>');
+                    <a href="javascript:{}" onclick="$(\'#checkReg'.$_GET['u'].'\').html(\'Р—Р°РіСЂСѓР·РєР°...\');$(\'#checkReg'.$_GET['u'].'\').load(\'/register/check.php?u='.$_GET['u'].'&b=1\')">РџСЂРёРЅСЏС‚СЊ</a>
+                    <a href="javascript:{}" onclick="$(\'#checkReg'.$_GET['u'].'\').html(\'Р—Р°РіСЂСѓР·РєР°...\');$(\'#checkReg'.$_GET['u'].'\').load(\'/register/check.php?u='.$_GET['u'].'&b=0\')">РћС‚РєР»РѕРЅРёС‚СЊ</a>');
         }
     } else {
-        exit('<h4>В регистрации отказано</h4>');
+        exit('<h4>Р’ СЂРµРіРёСЃС‚СЂР°С†РёРё РѕС‚РєР°Р·Р°РЅРѕ</h4>');
     }
 }

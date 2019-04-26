@@ -3,13 +3,13 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 		 
 		 
 		     <div id="rightContentNews">';
 
-        include('../news/blocknews.php');//Блок с новостями
+        include('../news/blocknews.php');//Р‘Р»РѕРє СЃ РЅРѕРІРѕСЃС‚СЏРјРё
     ?>
 <?php
 print <<<HERE
@@ -18,47 +18,47 @@ print <<<HERE
 		 
 		<div id="rightContent">
 		<div class="shortcutHome">
-		<a href="/news/add.php"><img src="../styles/img/posting.png"><br>Добавить новость</a>
+		<a href="/news/add.php"><img src="../styles/img/posting.png"><br>Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/photo.png"><br>Оценки</a>
+		<a href=""><img src="../styles/img/photo.png"><br>РћС†РµРЅРєРё</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/halaman.png"><br>Прогулы</a>
+		<a href=""><img src="../styles/img/halaman.png"><br>РџСЂРѕРіСѓР»С‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/template.png"><br>Состав группы</a>
+		<a href=""><img src="../styles/img/template.png"><br>РЎРѕСЃС‚Р°РІ РіСЂСѓРїРїС‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/quote.png"><br>Настройки группы</a>
+		<a href=""><img src="../styles/img/quote.png"><br>РќР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href="/profile/message/new.php"><img src="../styles/img/bukutamu.png"><br>Сделать рассылку</a>
+		<a href="/profile/message/new.php"><img src="../styles/img/bukutamu.png"><br>РЎРґРµР»Р°С‚СЊ СЂР°СЃСЃС‹Р»РєСѓ</a>
 		</div>
 				</div>
 
 			<div id="rightContent">
 		<div class="clear"></div>	
-		<div id="smallRight"><h3>Общая информация</h3>
+		<div id="smallRight"><h3>РћР±С‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</h3>
 		<table style="border: none;font-size: 12px;color: #5b5b5b;width: 100%;margin: 10px 0 10px 0;">
-			<tr><td style="border: none;padding: 4px;">Пропусков всего</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Средний результат группы среди других</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Средний балл в группе</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Лучший ученик группы</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Лучшая ученица группы</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Лучший в группе</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РџСЂРѕРїСѓСЃРєРѕРІ РІСЃРµРіРѕ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЎСЂРµРґРЅРёР№ СЂРµР·СѓР»СЊС‚Р°С‚ РіСЂСѓРїРїС‹ СЃСЂРµРґРё РґСЂСѓРіРёС…</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЎСЂРµРґРЅРёР№ Р±Р°Р»Р» РІ РіСЂСѓРїРїРµ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">Р›СѓС‡С€РёР№ СѓС‡РµРЅРёРє РіСЂСѓРїРїС‹</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">Р›СѓС‡С€Р°СЏ СѓС‡РµРЅРёС†Р° РіСЂСѓРїРїС‹</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">Р›СѓС‡С€РёР№ РІ РіСЂСѓРїРїРµ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
 		</table>
 		</div>
 		
 		
-		<div id="smallRight"><h3>Топ прогульщиков</h3>
+		<div id="smallRight"><h3>РўРѕРї РїСЂРѕРіСѓР»СЊС‰РёРєРѕРІ</h3>
 		<table style="border: none;font-size: 12px;color: #5b5b5b;width: 100%;margin: 10px 0 10px 0;">
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
-			<tr><td style="border: none;padding: 4px;">Ярослав Широкалов</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
+			<tr><td style="border: none;padding: 4px;">РЇСЂРѕСЃР»Р°РІ РЁРёСЂРѕРєР°Р»РѕРІ</td><td style="border: none;padding: 4px;"><b>12</b></td></tr>
 			</table>
 		</div>
 HERE;

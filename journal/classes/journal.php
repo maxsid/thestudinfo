@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ìàêñèì Ñèäîðîâ
+ * User: ÐœÐ°ÐºÑÐ¸Ð¼ Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð²
  * Date: 12.05.14
  * Time: 18:46
  */

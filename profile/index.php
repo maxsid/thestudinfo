@@ -26,7 +26,7 @@ include("../classes/autoload.php");
 <body>
 
 
-<!-- шапка сайта -->
+<!-- С€Р°РїРєР° СЃР°Р№С‚Р° -->
 
 <div id="header">
 
@@ -36,25 +36,25 @@ include("../classes/autoload.php");
 
 </div>
 
-<!-- тело сайта -->
+<!-- С‚РµР»Рѕ СЃР°Р№С‚Р° -->
 
 <div id="wrapper">
 
-    <!-- левая часть -->
+    <!-- Р»РµРІР°СЏ С‡Р°СЃС‚СЊ -->
     <?
     include('leftblock.php');
     ?>
-    <!-- правая часть -->
+    <!-- РїСЂР°РІР°СЏ С‡Р°СЃС‚СЊ -->
     <?
     include('rightblock.php');
     ?>
 
 </div>
 
-<!-- подвал сайта -->
+<!-- РїРѕРґРІР°Р» СЃР°Р№С‚Р° -->
 <div class="clear"></div>
 <div id="footer">
-    &copy; 2013 - 2014 SFS GROUP | <a href="#">студинфо.ру</a> <br>
+    &copy; 2013 - 2014 SFS GROUP | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div>
 </body>
 

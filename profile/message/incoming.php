@@ -10,16 +10,16 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 		 <div id="news_dvig">
-         <h3>Входящие сообщения</h3>
+         <h3>Р’С…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ</h3>
          </div>
 		  <div id="news_dvig_menu">
          <ul>
-		 <li><a style="background-image:url(../../styles/img/mail.png)" href="incoming.php">Входящие</a></li>
-		 <li><a style="background-image:url(../../styles/img/sent_mail.png)" href="outcoming.php">Исходящие</a></li>
-		 <li><a style="background-image:url(../../styles/img/new_mail.png)" href="new.php">Новое сообщение</a></li>
+		 <li><a style="background-image:url(../../styles/img/mail.png)" href="incoming.php">Р’С…РѕРґСЏС‰РёРµ</a></li>
+		 <li><a style="background-image:url(../../styles/img/sent_mail.png)" href="outcoming.php">РСЃС…РѕРґСЏС‰РёРµ</a></li>
+		 <li><a style="background-image:url(../../styles/img/new_mail.png)" href="new.php">РќРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ</a></li>
 		 </ul>
          </div>
 		 <div id="rightContent">
@@ -29,10 +29,10 @@ print '
 
 if ($my->mail->countIncoming() == 0)
 {
-    exit('Сообщений нет </div> </div>
+    exit('РЎРѕРѕР±С‰РµРЅРёР№ РЅРµС‚ </div> </div>
 <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>');
 	
 }
@@ -40,9 +40,9 @@ if ($my->mail->countIncoming() == 0)
 print '<table class="tables">
     <thead>
     <tr>
-        <th width="30%">Отправитель</th>
-        <th width="53%">Заголовок</th>
-        <th width="17%">Отправлено</th>
+        <th width="30%">РћС‚РїСЂР°РІРёС‚РµР»СЊ</th>
+        <th width="53%">Р—Р°РіРѕР»РѕРІРѕРє</th>
+        <th width="17%">РћС‚РїСЂР°РІР»РµРЅРѕ</th>
     </tr>
     </thead>
     <tbody>';
@@ -56,14 +56,14 @@ foreach ($my->mail->incoming as $key=>$mes)
     print ' <tr onclick="$(\'#exampleModal'.$key.'\').arcticmodal()" id="#example1">
                 <td>'.$author->getFullName(false,true).'</td>
                 <td>'.$mes->title.'</td>
-                <td>'.$mes->getDate().' в '.$mes->time.'</td>
+                <td>'.$mes->getDate().' РІ '.$mes->time.'</td>
             </tr>';
     $modalWindows .=  '<div class="g-hidden-message">
     <div class="box-modal-message" id="exampleModal'.$key.'">
-        <div class="box-modal_close-message arcticmodal-close">закрыть</div>
+        <div class="box-modal_close-message arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>
         <h3>'.$mes->title.'</h3><br>
-        От: '.$author->getFullName(false).'<br>
-        Кому: ';
+        РћС‚: '.$author->getFullName(false).'<br>
+        РљРѕРјСѓ: ';
 
     $group = $mes->recipients[0];
     foreach ($mes->recipients as $keyi=>$row)
@@ -77,7 +77,7 @@ foreach ($my->mail->incoming as $key=>$mes)
     }
     unset($group);
     $modalWindows .=  '<br>
-        Получено '.$mes->getDate().' в '.$mes->time.'<br><br>
+        РџРѕР»СѓС‡РµРЅРѕ '.$mes->getDate().' РІ '.$mes->time.'<br><br>
         '.$mes->message.'
     </div>
 </div>';
@@ -90,6 +90,6 @@ print $modalWindows;
 print '
 <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>';
 

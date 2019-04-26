@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 27.05.14
  * Time: 21:53
  */
@@ -16,18 +16,18 @@ include($root.'/profile/leftblock.php');
 print '
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 		  ';
 include('groupsTabs.php');
 include('modeTabs.php');
 print '<div id="rightContent">'; ?>
-<H3>Временно не работает.<br>Мы приносим свои извинения.</H3>
+<H3>Р’СЂРµРјРµРЅРЅРѕ РЅРµ СЂР°Р±РѕС‚Р°РµС‚.<br>РњС‹ РїСЂРёРЅРѕСЃРёРј СЃРІРѕРё РёР·РІРёРЅРµРЅРёСЏ.</H3>
 
 
 
 <?print '</div></div>
 <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>';

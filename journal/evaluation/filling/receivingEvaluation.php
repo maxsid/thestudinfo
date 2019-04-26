@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ìàêñèì Ñèäîðîâ
+ * User: ÐœÐ°ÐºÑÐ¸Ð¼ Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð²
  * Date: 17.06.14
  * Time: 0:53
  */
@@ -22,8 +22,8 @@ $lessons = $journal->getPreviousLessons(0,false);
 foreach ($_POST as $userId=>$evaluation){
     foreach($lessons as $key=>$les){
         $letter = substr($evaluation,$key,1);
-        if ($letter == "y" || $letter == "Y" || $letter == "í"){
-            $letter = "Í";
+        if ($letter == "y" || $letter == "Y" || $letter == "Ð½"){
+            $letter = "Ð";
         }
         $les->addEvaluation($userId,$letter);
     }

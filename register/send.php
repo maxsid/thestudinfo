@@ -1,6 +1,6 @@
 <?
 foreach ($_GET as $key=>$el) {
-    $_GET[$key] = iconv('UTF-8', 'windows-1251', $_GET[$key]);
+    $_GET[$key] = iconv('UTF-8', 'utf-8', $_GET[$key]);
 }
 include_once('../classes/autoloadClasses.php');
 $user = new user();

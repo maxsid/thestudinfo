@@ -1,20 +1,20 @@
 /**
- * Created by Максим Сидоров on 07.05.14.
+ * Created by РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ on 07.05.14.
  */
 setDateOnDay();
 
 function setDateOnDay () {
     var element = document.getElementsByName('week')[0];
-    var days = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
+    var days = ['РџРѕРЅРµРґРµР»СЊРЅРёРє','Р’С‚РѕСЂРЅРёРє','РЎСЂРµРґР°','Р§РµС‚РІРµСЂРі','РџСЏС‚РЅРёС†Р°','РЎСѓР±Р±РѕС‚Р°','Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ'];
     var year = element.value.substr(0,4);
     var week = element.value.substr(6)-1;
     var d = new Date(year,0,1);
     d.setDate((d.getDate() - d.getDay() + 1) + week * 7);
     var labels = document.getElementsByClassName('label');
     for (var i = 0; i < 7; i++){
-        year = d.getFullYear(); //Год
-        var month = d.getMonth() + 1;month = month < 10 ? '0' + month : month; //Месяц
-        var date = d.getDate() < 10 ? '0' + d.getDate() : d.getDate(); //Дата
+        year = d.getFullYear(); //Р“РѕРґ
+        var month = d.getMonth() + 1;month = month < 10 ? '0' + month : month; //РњРµСЃСЏС†
+        var date = d.getDate() < 10 ? '0' + d.getDate() : d.getDate(); //Р”Р°С‚Р°
         labels[i].innerHTML = days[i] + ' - ' + date + '.' + month + '.' + year;
         d.setDate(d.getDate() + 1);
     }

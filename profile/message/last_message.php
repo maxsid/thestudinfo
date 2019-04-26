@@ -1,14 +1,14 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 29.05.14
  * Time: 20:47
  */
 $last_message = $my->mail->incoming;
 print '<table class="tables">';
 if (count($last_message) == 0){
-    print '<tr><td>Сообщений нет!</td></tr>';
+    print '<tr><td>РЎРѕРѕР±С‰РµРЅРёР№ РЅРµС‚!</td></tr>';
 } else {
     $modalWindows = '';
     foreach ($last_message as $key=>$mes)
@@ -19,14 +19,14 @@ if (count($last_message) == 0){
         print ' <tr onclick="$(\'#exampleModal'.$key.'\').arcticmodal()" id="#example1">
                 <td>'.$author->getFullName(false,true).'</td>
                 <td>'.$mes->title.'</td>
-                <td>'.$mes->getDate().' в '.$mes->time.'</td>
+                <td>'.$mes->getDate().' РІ '.$mes->time.'</td>
             </tr>';
         $modalWindows .=  '<div class="g-hidden-message">
     <div class="box-modal-message" id="exampleModal'.$key.'">
-        <div class="box-modal_close-message arcticmodal-close">закрыть</div>
+        <div class="box-modal_close-message arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>
         <h3>'.$mes->title.'</h3><br>
-        От: '.$author->getFullName(false).'<br>
-        Кому: ';
+        РћС‚: '.$author->getFullName(false).'<br>
+        РљРѕРјСѓ: ';
 
         $group = $mes->recipients[0];
         foreach ($mes->recipients as $key0=>$row)
@@ -40,7 +40,7 @@ if (count($last_message) == 0){
         }
         unset($group);
         $modalWindows .=  '<br>
-        Получено '.$mes->getDate().' в '.$mes->time.'<br><br>
+        РџРѕР»СѓС‡РµРЅРѕ '.$mes->getDate().' РІ '.$mes->time.'<br><br>
         '.$mes->message.'
     </div>
 </div>';

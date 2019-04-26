@@ -1,33 +1,33 @@
 <? include_once('classes/autoload.php'); ?>
 <form name=anketa method="post" action="mailto:vasya@mail.ru">
-    <b>Ф.И.О.</b><br>
+    <b>Р¤.Р.Рћ.</b><br>
     <input type=text name="fio" size=37 maxlength=100><br><br>
-    <b>Вы:</b>
-    Мужчина<input type=radio name="sex" value="мужчина"> Женщина<input type=radio name="sex" value="женщина"><br><br>
-    <b>Какие фильмы вы любите смотреть?</b><br>
-    <input type=checkbox name="fiction" value="yes"> фантастику<br>
-    <input type=checkbox name="thriller" value="yes"> боевики<br>
-    <input type=checkbox name="adventure" value="yes"> приключенческие<br>
-    <input type=checkbox name="melodrama" value="yes"> мелодрамы<br>
-    <input type=checkbox name="documentary" value="yes"> документальные<br>
+    <b>Р’С‹:</b>
+    РњСѓР¶С‡РёРЅР°<input type=radio name="sex" value="РјСѓР¶С‡РёРЅР°"> Р–РµРЅС‰РёРЅР°<input type=radio name="sex" value="Р¶РµРЅС‰РёРЅР°"><br><br>
+    <b>РљР°РєРёРµ С„РёР»СЊРјС‹ РІС‹ Р»СЋР±РёС‚Рµ СЃРјРѕС‚СЂРµС‚СЊ?</b><br>
+    <input type=checkbox name="fiction" value="yes"> С„Р°РЅС‚Р°СЃС‚РёРєСѓ<br>
+    <input type=checkbox name="thriller" value="yes"> Р±РѕРµРІРёРєРё<br>
+    <input type=checkbox name="adventure" value="yes"> РїСЂРёРєР»СЋС‡РµРЅС‡РµСЃРєРёРµ<br>
+    <input type=checkbox name="melodrama" value="yes"> РјРµР»РѕРґСЂР°РјС‹<br>
+    <input type=checkbox name="documentary" value="yes"> РґРѕРєСѓРјРµРЅС‚Р°Р»СЊРЅС‹Рµ<br>
     <br>
-    <b>Из этих актеров вам больше нравится:</b><br>
+    <b>РР· СЌС‚РёС… Р°РєС‚РµСЂРѕРІ РІР°Рј Р±РѕР»СЊС€Рµ РЅСЂР°РІРёС‚СЃСЏ:</b><br>
     <select name="actor" size="4">
-        <option value="gorez">Гордый Горец
-        <option value="rembo">Недоделанный Рембо
-        <option value="cowboy">Ковбой В Шляпе
-        <option value="crybobby">Слезливый Бобби
-        <option value="history">Историческая личность
+        <option value="gorez">Р“РѕСЂРґС‹Р№ Р“РѕСЂРµС†
+        <option value="rembo">РќРµРґРѕРґРµР»Р°РЅРЅС‹Р№ Р РµРјР±Рѕ
+        <option value="cowboy">РљРѕРІР±РѕР№ Р’ РЁР»СЏРїРµ
+        <option value="crybobby">РЎР»РµР·Р»РёРІС‹Р№ Р‘РѕР±Р±Рё
+        <option value="history">РСЃС‚РѕСЂРёС‡РµСЃРєР°СЏ Р»РёС‡РЅРѕСЃС‚СЊ
     </select><br><br>
-    <b>В какую страну вы хотели бы поехать?</b><br>
+    <b>Р’ РєР°РєСѓСЋ СЃС‚СЂР°РЅСѓ РІС‹ С…РѕС‚РµР»Рё Р±С‹ РїРѕРµС…Р°С‚СЊ?</b><br>
     <select name="country">
-        <option value="france">Франция
-        <option value="USA">США
-        <option value="england">Англия
-        <option value="italy">Италия
-        <option value="australia">Австралия
+        <option value="france">Р¤СЂР°РЅС†РёСЏ
+        <option value="USA">РЎРЁРђ
+        <option value="england">РђРЅРіР»РёСЏ
+        <option value="italy">РС‚Р°Р»РёСЏ
+        <option value="australia">РђРІСЃС‚СЂР°Р»РёСЏ
     </select><br><br>
-    <b>Ваш е-майл:</b><br>
+    <b>Р’Р°С€ Рµ-РјР°Р№Р»:</b><br>
     <input type=text name="email" size=37 maxlength=80 value="@"><br><br>
-    <input type=submit value="Отправить анкету"><input type=reset value="Отмена">
+    <input type=submit value="РћС‚РїСЂР°РІРёС‚СЊ Р°РЅРєРµС‚Сѓ"><input type=reset value="РћС‚РјРµРЅР°">
 </form>

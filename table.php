@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="http://thestudinfo.ru/styles/css/jquery.arcticmodal-0.3.css"/>
 <link rel="stylesheet" type="text/css" href="http://thestudinfo.ru/styles/css/simple.css"/>
 <link rel="stylesheet" type="text/css" href="http://thestudinfo.ru/styles/css/table.css"/>
-<!-- стиль таблицы -->
+<!-- СЃС‚РёР»СЊ С‚Р°Р±Р»РёС†С‹ -->
 
 
 
@@ -23,10 +23,10 @@ $(function(){
 </head>
 
 
-		<a onclick="$('#exampleModal1').arcticmodal()" id="#example1">Админ управление</a>
+		<a onclick="$('#exampleModal1').arcticmodal()" id="#example1">РђРґРјРёРЅ СѓРїСЂР°РІР»РµРЅРёРµ</a>
 			<div class="g-hidden">
 				<div class="box-modal" id="exampleModal1">
-					<div class="box-modal_close arcticmodal-close">закрыть</div>
+					<div class="box-modal_close arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>
 					<br>
 
 
@@ -34,7 +34,7 @@ $(function(){
 <table class="tables">
 			<thead>
 				<tr>
-					<th>Имя</th>
+					<th>РРјСЏ</th>
 					<th>1</th>
 					<th>2</th>
 					<th>3</th>
@@ -70,7 +70,7 @@ $(function(){
 			</thead>
 			<tbody>
 				<tr>
-					<td class="tablestd">Филатов Д.С.</td>
+					<td class="tablestd">Р¤РёР»Р°С‚РѕРІ Р”.РЎ.</td>
 					<td class="tablestd">-</td>
 					<td class="tablestd">-</td>
 					<td>-</td>
@@ -103,7 +103,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 								<tr>
-					<td>Сидоров М.О.</td>
+					<td>РЎРёРґРѕСЂРѕРІ Рњ.Рћ.</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -136,7 +136,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 				<tr>
-					<td>Широкалов Я.Д.</td>
+					<td>РЁРёСЂРѕРєР°Р»РѕРІ РЇ.Р”.</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -177,17 +177,17 @@ $(function(){
 
 <br>
 	
-			<a id="example2">Успеваемость</a><br>
+			<a id="example2">РЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ</a><br>
 			<div class="g-hidden">
 				<div class="box-modal" id="exampleModal2">
-					<div class="box-modal_close arcticmodal-close">закрыть</div>
+					<div class="box-modal_close arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>
 
 
 
 <table class="tables">
 			<thead>
 				<tr>
-					<th>Предмет</th>
+					<th>РџСЂРµРґРјРµС‚</th>
 					<th>1</th>
 					<th>2</th>
 					<th>3</th>
@@ -223,7 +223,7 @@ $(function(){
 			</thead>
 			<tbody>
 				<tr>
-					<td>Основы 1С Бухгалтерия</td>
+					<td>РћСЃРЅРѕРІС‹ 1РЎ Р‘СѓС…РіР°Р»С‚РµСЂРёСЏ</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -256,7 +256,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 								<tr>
-					<td>Основы UML</td>
+					<td>РћСЃРЅРѕРІС‹ UML</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -289,7 +289,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 				<tr>
-					<td>Основы С++</td>
+					<td>РћСЃРЅРѕРІС‹ РЎ++</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -322,7 +322,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 <tr>
-					<td>Основы Java</td>
+					<td>РћСЃРЅРѕРІС‹ Java</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -355,7 +355,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 <tr>
-					<td>Основы С#</td>
+					<td>РћСЃРЅРѕРІС‹ РЎ#</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -388,7 +388,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 <tr>
-					<td>Основы php</td>
+					<td>РћСЃРЅРѕРІС‹ php</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -421,7 +421,7 @@ $(function(){
 					<td>-</td>
 				</tr>
 <tr>
-					<td>Другой предмет</td>
+					<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -453,7 +453,7 @@ $(function(){
 					<td>-</td>
 					<td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -485,7 +485,7 @@ $(function(){
 					<td>-</td>
 					<td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -517,7 +517,7 @@ $(function(){
 					<td>-</td>
 					<td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -549,7 +549,7 @@ $(function(){
 					<td>-</td>
 					<td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -596,17 +596,17 @@ $(function(){
 				});
 			</script>
 		
-<a id="example3">Пропуски</a><br>
+<a id="example3">РџСЂРѕРїСѓСЃРєРё</a><br>
 			<div class="g-hidden">
 				<div class="box-modal" id="exampleModal3">
-					<div class="box-modal_close arcticmodal-close">закрыть</div>
+					<div class="box-modal_close arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>
 <br>
 
 
 <table class="tables">
 			<thead>
 				<tr>
-					<th>Предмет/пропуски в часах</th>
+					<th>РџСЂРµРґРјРµС‚/РїСЂРѕРїСѓСЃРєРё РІ С‡Р°СЃР°С…</th>
 					<th>1</th>
 					<th>2</th>
 					<th>3</th>
@@ -638,13 +638,13 @@ $(function(){
 					<th>29</th>
 					<th>30</th>
 <th>31</th>
-<th>всего</th>
+<th>РІСЃРµРіРѕ</th>
 
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>Основы 1С Бухгалтерия</td>
+					<td>РћСЃРЅРѕРІС‹ 1РЎ Р‘СѓС…РіР°Р»С‚РµСЂРёСЏ</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -679,7 +679,7 @@ $(function(){
 <td>16</td>
 				</tr>
 								<tr>
-					<td>Основы UML</td>
+					<td>РћСЃРЅРѕРІС‹ UML</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -714,7 +714,7 @@ $(function(){
 <td>-</td>
 				</tr>
 				<tr>
-					<td>Основы С++</td>
+					<td>РћСЃРЅРѕРІС‹ РЎ++</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -749,7 +749,7 @@ $(function(){
 <td>-</td>
 				</tr>
 <tr>
-					<td>Основы Java</td>
+					<td>РћСЃРЅРѕРІС‹ Java</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -784,7 +784,7 @@ $(function(){
 <td>-</td>
 				</tr>
 <tr>
-					<td>Основы С#</td>
+					<td>РћСЃРЅРѕРІС‹ РЎ#</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -819,7 +819,7 @@ $(function(){
 <td>-</td>
 				</tr>
 <tr>
-					<td>Основы php</td>
+					<td>РћСЃРЅРѕРІС‹ php</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -854,7 +854,7 @@ $(function(){
 <td>-</td>
 				</tr>
 <tr>
-					<td>Другой предмет</td>
+					<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -888,7 +888,7 @@ $(function(){
 <td>-</td>
 <td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -922,7 +922,7 @@ $(function(){
 <td>-</td>
 <td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -956,7 +956,7 @@ $(function(){
 <td>-</td>
 <td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>
@@ -990,7 +990,7 @@ $(function(){
 <td>-</td>
 <td>-</td>
 				</tr>
-<td>Другой предмет</td>
+<td>Р”СЂСѓРіРѕР№ РїСЂРµРґРјРµС‚</td>
 					<td>-</td>
 					<td>-</td>
 					<td>-</td>

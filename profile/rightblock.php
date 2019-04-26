@@ -4,19 +4,19 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().$nameSpeciality.'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().$nameSpeciality.'</h4>
 	     </div>
 		 
 		 
 		     <div id="rightContentNews">';
 
-        include('../news/blocknews.php');//Блок с новостями
+        include('../news/blocknews.php');//Р‘Р»РѕРє СЃ РЅРѕРІРѕСЃС‚СЏРјРё
     ?>
 <?php
 print '
 	 	     </div>
 <div id="news_dvig">
-   <h3>Ближайшие занятия</h3>
+   <h3>Р‘Р»РёР¶Р°Р№С€РёРµ Р·Р°РЅСЏС‚РёСЏ</h3>
 </div>
 			 <div id="rightContent">
 		<div class="clear"></div>	
@@ -32,37 +32,37 @@ print '
 		</div>
 
 <div id="news_dvig">
-   <h3>Управление группой</h3>
+   <h3>РЈРїСЂР°РІР»РµРЅРёРµ РіСЂСѓРїРїРѕР№</h3>
 </div>		
 		
 		<div id="rightContent">
 		<div class="shortcutHome">
-		<a href="/news/add.php"><img src="../styles/img/posting.png"><br>Добавить новость</a>
+		<a href="/news/add.php"><img src="../styles/img/posting.png"><br>Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕСЃС‚СЊ</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/photo.png"><br>Оценки</a>
+		<a href=""><img src="../styles/img/photo.png"><br>РћС†РµРЅРєРё</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/halaman.png"><br>Прогулы</a>
+		<a href=""><img src="../styles/img/halaman.png"><br>РџСЂРѕРіСѓР»С‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/template.png"><br>Состав группы</a>
+		<a href=""><img src="../styles/img/template.png"><br>РЎРѕСЃС‚Р°РІ РіСЂСѓРїРїС‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href=""><img src="../styles/img/settings.png"><br>Настройки группы</a>
+		<a href=""><img src="../styles/img/settings.png"><br>РќР°СЃС‚СЂРѕР№РєРё РіСЂСѓРїРїС‹</a>
 		</div>
 		<div class="shortcutHome">
-		<a href="/profile/message/new.php"><img src="../styles/img/bukutamu.png"><br>Сделать рассылку</a>
+		<a href="/profile/message/new.php"><img src="../styles/img/bukutamu.png"><br>РЎРґРµР»Р°С‚СЊ СЂР°СЃСЃС‹Р»РєСѓ</a>
 		</div>		</div>	
 		
 <div id="news_dvig">
-   <h3>Последние сообщения</h3>
+   <h3>РџРѕСЃР»РµРґРЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ</h3>
 </div>		
 	
 ';
 	  
     				print '<div id="rightContent"> ';
-  include('message/last_message.php');//Блок с сообщениями
+  include('message/last_message.php');//Р‘Р»РѕРє СЃ СЃРѕРѕР±С‰РµРЅРёСЏРјРё
 	?>
 
 	

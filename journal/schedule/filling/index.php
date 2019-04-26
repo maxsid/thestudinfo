@@ -3,7 +3,7 @@ include_once('../../../classes/autoload.php');
 print '
 <div class="g-hidden-message_block">
     <div class="box-modal-message" id="addDiscipline">
-        <div class="box-modal_close-message arcticmodal-close">закрыть</div>';
+        <div class="box-modal_close-message arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>';
         include_once('addDiscipline/index.php');
 print '</div>
 </div>
@@ -18,7 +18,7 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 		  ';
 include_once('../groupsTabs.php');
@@ -65,5 +65,5 @@ print '
 </div></div>
 <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>

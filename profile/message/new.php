@@ -10,16 +10,16 @@ print '
 
          <div id="rightContent">
         <h3>' . $my->getFullName() . '</h3>
-	    <h4>Группа ' . $my->getGroup() . '</h4>
+	    <h4>Р“СЂСѓРїРїР° ' . $my->getGroup() . '</h4>
 	     </div>
 		 <div id="news_dvig">
-         <h3>Входящие сообщения</h3>
+         <h3>Р’С…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ</h3>
          </div>
 		  <div id="news_dvig_menu">
          <ul>
-		 <li><a style="background-image:url(../../styles/img/mail.png)" href="incoming.php">Входящие</a></li>
-		 <li><a style="background-image:url(../../styles/img/sent_mail.png)" href="outcoming.php">Исходящие</a></li>
-		 <li><a style="background-image:url(../../styles/img/new_mail.png)" href="new.php">Новое сообщение</a></li>
+		 <li><a style="background-image:url(../../styles/img/mail.png)" href="incoming.php">Р’С…РѕРґСЏС‰РёРµ</a></li>
+		 <li><a style="background-image:url(../../styles/img/sent_mail.png)" href="outcoming.php">РСЃС…РѕРґСЏС‰РёРµ</a></li>
+		 <li><a style="background-image:url(../../styles/img/new_mail.png)" href="new.php">РќРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ</a></li>
 		 </ul>
          </div>
 		 <div id="rightContent">
@@ -30,23 +30,23 @@ if (!empty($_POST['title']) and !empty($_POST['recipients']) and !empty($_POST['
     $mes = new message();
     $mes->fullForSend($my->id, $_POST['title'], $_POST['editor'], $_POST['recipients']);
     if ($mes->sendMessages()) {
-        exit('Сообщение успешно отправлено!
+        exit('РЎРѕРѕР±С‰РµРЅРёРµ СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ!
 		</div></div>
 		    <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>');
     };
 } elseif (isset($_POST['buttonOk'])) {
-    print 'Вы не заполнили нужные поля!';
+    print 'Р’С‹ РЅРµ Р·Р°РїРѕР»РЅРёР»Рё РЅСѓР¶РЅС‹Рµ РїРѕР»СЏ!';
 }
 
 print '<form method="POST">
-<h5>Заголовок сообщения(макс. 40 символов):</h5>
+<h5>Р—Р°РіРѕР»РѕРІРѕРє СЃРѕРѕР±С‰РµРЅРёСЏ(РјР°РєСЃ. 40 СЃРёРјРІРѕР»РѕРІ):</h5>
 <input class="inputi"  type="text" name="title" value="" size="112px" maxlength="40" autocomplete="off">';
 print '<table>
             <tr>
-                <td><h5>Получатели:</h5> <select name="recipients[]" size="5" multiple="multiple">';
+                <td><h5>РџРѕР»СѓС‡Р°С‚РµР»Рё:</h5> <select name="recipients[]" size="5" multiple="multiple">';
 //////////////////////////////////
 $inst = new institut($my->institut);
 $groups = $inst->getGroupsInstitut(true,true);
@@ -62,9 +62,9 @@ foreach ($groups as $gr) {
 }
 $admin = $inst->getAdministration();
 if (count($admin) > 0) {
-    print '<OPTGROUP label="Администрация">';
+    print '<OPTGROUP label="РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ">';
     foreach ($admin as $user) {
-        print '<option value="' . $user->id . '" label="Администрация" >' . $user->getFullName() . '</option>';
+        print '<option value="' . $user->id . '" label="РђРґРјРёРЅРёСЃС‚СЂР°С†РёСЏ" >' . $user->getFullName() . '</option>';
     }
     print '</OPTGROUP>';
 }
@@ -77,14 +77,14 @@ include($root . '/elements/searchOnList.php');
 print '         </td>
             </tr>
         </table><br>';
-print '<h5>Текст: </h5>
+print '<h5>РўРµРєСЃС‚: </h5>
 <textarea name="editor" id="editor1" cols="45" rows="5" value=""></textarea>
 <script type="text/javascript">
    CKEDITOR.replace(\'editor\');
 </script><br>
-<button class="action greenbtn" float="right" type="submit" name="buttonOk"><span class="label">Отправить</span></button></div></div>
+<button class="action greenbtn" float="right" type="submit" name="buttonOk"><span class="label">РћС‚РїСЂР°РІРёС‚СЊ</span></button></div></div>
 </form>	
     <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div></div></div>';

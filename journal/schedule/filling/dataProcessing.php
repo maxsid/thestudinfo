@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 07.05.14
  * Time: 23:10
  */
@@ -30,7 +30,7 @@ for ($i = 0;$i < 6;$i++)
     }
 }
 
-$countPair .= $countPair < 5 ? " занятия" : " занятий";
-$errorPair = $errorPair > 0 ? $countPair . " не добавлено" : "";
+$countPair .= $countPair < 5 ? " Р·Р°РЅСЏС‚РёСЏ" : " Р·Р°РЅСЏС‚РёР№";
+$errorPair = $errorPair > 0 ? $countPair . " РЅРµ РґРѕР±Р°РІР»РµРЅРѕ" : "";
 header('Location: ../../schedule/?w='.$_POST['week']);
-print "Успешно добавлено ".$countPair." в расписание. " . $errorPair;
+print "РЈСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅРѕ ".$countPair." РІ СЂР°СЃРїРёСЃР°РЅРёРµ. " . $errorPair;

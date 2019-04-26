@@ -1,5 +1,5 @@
-<h5>Поиск по списку:</h5>
-<input type="text" name="searchBox" id="input2"><button class="action greenbtn" type="submit" name="subSearch" onclick="return setSelected()"><span class="label">Отметить</span></button>
+<h5>РџРѕРёСЃРє РїРѕ СЃРїРёСЃРєСѓ:</h5>
+<input type="text" name="searchBox" id="input2"><button class="action greenbtn" type="submit" name="subSearch" onclick="return setSelected()"><span class="label">РћС‚РјРµС‚РёС‚СЊ</span></button>
 
 <h5></h5>
 <script>

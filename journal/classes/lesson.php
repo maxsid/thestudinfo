@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ìàêñèì Ñèäîðîâ
+ * User: ÐœÐ°ÐºÑÐ¸Ð¼ Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð²
  * Date: 13.05.14
  * Time: 0:28
  */
@@ -91,7 +91,7 @@ class lesson
     }
 
     function getCountOmissions(){
-        $query = "SELECT `id` FROM `studinfo`.`evaluation` WHERE `evaluation` = 'Í' AND `lesson` = $this->id";
+        $query = "SELECT `id` FROM `studinfo`.`evaluation` WHERE `evaluation` = 'Ð' AND `lesson` = $this->id";
         return $this->db->countRow($query);
     }
 } 

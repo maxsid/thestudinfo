@@ -1,18 +1,18 @@
 <?
 if ($_POST['password'] == '12qw34er'){
 print '
-№	ФИО				                Login		        Password    <br>
-Студенты:<br>
-1	Сидоров Максим Олегович		    apk_3660	        7oDLoGBzcK  <br>
-2	Филатов Дмитрий Станиславович	apk_4250	        xiXFaWgCGr  <br>
-3	Широкалов Ярослав Дмитриевич	apk_3667	        CBPA56ErlR  <br>
-Преподаватели<br>
-4   Раданцева Ольга Владимировна    apk_RadancevaOV     USuTh0ubla  <br>
-5   Боков Роман Аркадьевич          apk_BokovRA         sdwkG2vneh
+в„–	Р¤РРћ				                Login		        Password    <br>
+РЎС‚СѓРґРµРЅС‚С‹:<br>
+1	РЎРёРґРѕСЂРѕРІ РњР°РєСЃРёРј РћР»РµРіРѕРІРёС‡		    apk_3660	        7oDLoGBzcK  <br>
+2	Р¤РёР»Р°С‚РѕРІ Р”РјРёС‚СЂРёР№ РЎС‚Р°РЅРёСЃР»Р°РІРѕРІРёС‡	apk_4250	        xiXFaWgCGr  <br>
+3	РЁРёСЂРѕРєР°Р»РѕРІ РЇСЂРѕСЃР»Р°РІ Р”РјРёС‚СЂРёРµРІРёС‡	apk_3667	        CBPA56ErlR  <br>
+РџСЂРµРїРѕРґР°РІР°С‚РµР»Рё<br>
+4   Р Р°РґР°РЅС†РµРІР° РћР»СЊРіР° Р’Р»Р°РґРёРјРёСЂРѕРІРЅР°    apk_RadancevaOV     USuTh0ubla  <br>
+5   Р‘РѕРєРѕРІ Р РѕРјР°РЅ РђСЂРєР°РґСЊРµРІРёС‡          apk_BokovRA         sdwkG2vneh
 '; } else {
     print '
     <form method="POST">
-    Пароль:
+    РџР°СЂРѕР»СЊ:
     <input type="password" name="password"/>
     <input type="submit"/>
     </form>
@@ -24,34 +24,34 @@ admin@thestudinfo.ru
 Bjpc2?89
 
 
-Новая panel
+РќРѕРІР°СЏ panel
 
 		84.19.190.163
 https://84.19.190.163:8443/login_up.php3
 nabos
 Oovh5^50
-БД
+Р‘Р”
 studinfo
 12qw34er
 
 
 ::::::VERY VERY OLD SERVER:::::::
 
-Вход в Вашу Панель Управления Сайтом (DirectAdmin):
+Р’С…РѕРґ РІ Р’Р°С€Сѓ РџР°РЅРµР»СЊ РЈРїСЂР°РІР»РµРЅРёСЏ РЎР°Р№С‚РѕРј (DirectAdmin):
 
-http://178.86.21.48:2222 или http://mbdou17arzamas.info:2222
+http://178.86.21.48:2222 РёР»Рё http://mbdou17arzamas.info:2222
 
-Логин : protor
+Р›РѕРіРёРЅ : protor
 
-Пароль : c8s7A9n5U
+РџР°СЂРѕР»СЊ : c8s7A9n5U
 
-База данных: protor_studinfo
+Р‘Р°Р·Р° РґР°РЅРЅС‹С…: protor_studinfo
 
-Хост (сервер): localhost
+РҐРѕСЃС‚ (СЃРµСЂРІРµСЂ): localhost
 
-Имя пользователя: protor_studinfo
+РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: protor_studinfo
 
-Пароль: hunter
+РџР°СЂРѕР»СЊ: hunter
 
 http://mbdou17arzamas.info/studinfo/
 */

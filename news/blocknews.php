@@ -9,7 +9,7 @@
 </script>
 
 <div class="news_dvig">
-   <h3>Новости</h3>
+   <h3>РќРѕРІРѕСЃС‚Рё</h3>
 </div>
    <ul id="news-carusel" class="jcarousel-skin-ie7">
 
@@ -21,9 +21,9 @@
         $this_discription = $news->groupNews[$i]->description;
         $this_name = $news->groupNews[$i]->name;
 
-        //Если столбец "text" определен, то добавляем ссылки на полную новость
+        //Р•СЃР»Рё СЃС‚РѕР»Р±РµС† "text" РѕРїСЂРµРґРµР»РµРЅ, С‚Рѕ РґРѕР±Р°РІР»СЏРµРј СЃСЃС‹Р»РєРё РЅР° РїРѕР»РЅСѓСЋ РЅРѕРІРѕСЃС‚СЊ
         if ($news->groupNews[$i]->text != null){
-            $this_discription .= '  <a href="../news/view.php?i='.$news->groupNews[$i]->id.'">Полностью... </a>';
+            $this_discription .= '  <a href="../news/view.php?i='.$news->groupNews[$i]->id.'">РџРѕР»РЅРѕСЃС‚СЊСЋ... </a>';
             $this_name = '<a href="../news/view.php?i='.$news->groupNews[$i]->id.'">'.$this_name.'</a>';
         }
 
@@ -43,7 +43,7 @@
 		<div class="short-date"><span></span><a class="favs" href="#"></a></div>
 		<div class="short-content">
 		    <br>
-			<h1>Новостей нет</h1>
+			<h1>РќРѕРІРѕСЃС‚РµР№ РЅРµС‚</h1>
 		</div>
 		<div class="clear"></div></div></li>';
     }

@@ -1,21 +1,21 @@
 <?php
 /**1
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 21.05.14
  * Time: 19:03
  */
 include_once('../../../../classes/autoload.php');
 print '<div id="addDiscipline">';
-print '<h3>Добавление дисциплины</h3>';
+print '<h3>Р”РѕР±Р°РІР»РµРЅРёРµ РґРёСЃС†РёРїР»РёРЅС‹</h3>';
 print '<span id="error" style="color: #ff0000;"></span>';
-print 'Название:<input type="text" id="input2" name="disciplineName"/><br>
-       Группа:<input id="input2" type="text" class="group" name="disciplineGroup"/><br>
+print 'РќР°Р·РІР°РЅРёРµ:<input type="text" id="input2" name="disciplineName"/><br>
+       Р“СЂСѓРїРїР°:<input id="input2" type="text" class="group" name="disciplineGroup"/><br>
             <input type="hidden" name="disciplineGroupId"/>
-       Преподаватель:<input id="input2" type="text" class="teacher" name="disciplineTeacher"/><br>
+       РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ:<input id="input2" type="text" class="teacher" name="disciplineTeacher"/><br>
             <input type="hidden" name="disciplineTeacherId">
-       Аудитория:<input id="input2" type="text" name="disciplineAudience"/><br>
-            <input type="submit" value="Добавить" onclick="checkFill();"/>
+       РђСѓРґРёС‚РѕСЂРёСЏ:<input id="input2" type="text" name="disciplineAudience"/><br>
+            <input type="submit" value="Р”РѕР±Р°РІРёС‚СЊ" onclick="checkFill();"/>
         </div>';
 ?>
 <script type="text/javascript" src="/styles/js/jquery.autocomplete.js"></script>
@@ -29,22 +29,22 @@ print 'Название:<input type="text" id="input2" name="disciplineName"/><br>
         switch ("")
         {
             case discipline:
-                errorMessage('Не введено название!');
+                errorMessage('РќРµ РІРІРµРґРµРЅРѕ РЅР°Р·РІР°РЅРёРµ!');
                 return false;
             case document.getElementsByName('disciplineGroup')[0].value:
-                errorMessage('Не выбрана группа!');
+                errorMessage('РќРµ РІС‹Р±СЂР°РЅР° РіСЂСѓРїРїР°!');
                 return false;
             case document.getElementsByName('disciplineTeacher')[0].value:
-                errorMessage('Не выбран преподаватель!');
+                errorMessage('РќРµ РІС‹Р±СЂР°РЅ РїСЂРµРїРѕРґР°РІР°С‚РµР»СЊ!');
                 return false;
             case audience:
-                errorMessage('Не введен номер аудитории!');
+                errorMessage('РќРµ РІРІРµРґРµРЅ РЅРѕРјРµСЂ Р°СѓРґРёС‚РѕСЂРёРё!');
                 return false;
             case group:
-                errorMessage('Группу необходимо выбрать из списка!');
+                errorMessage('Р“СЂСѓРїРїСѓ РЅРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· СЃРїРёСЃРєР°!');
                 return false;
             case teacher:
-                errorMessage('Преподавателя необходимо выбрать из списка!');
+                errorMessage('РџСЂРµРїРѕРґР°РІР°С‚РµР»СЏ РЅРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· СЃРїРёСЃРєР°!');
                 return false;
         }
         $('#addDiscipline').text('Loading...');

@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ìàêñèì Ñèäîðîâ
+ * User: ÐœÐ°ÐºÑÐ¸Ð¼ Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð²
  * Date: 04.06.14
  * Time: 22:19
  */
@@ -11,8 +11,8 @@ $db = new db();
 if (empty($_GET['i'])) {
     return;
 }
-$_GET['query'] = iconv('UTF-8', 'windows-1251', $_GET['query']);
-$_GET['i'] = iconv('UTF-8', 'windows-1251', $_GET['i']);
+$_GET['query'] = iconv('UTF-8', 'utf-8', $_GET['query']);
+$_GET['i'] = iconv('UTF-8', 'utf-8', $_GET['i']);
 if ($_GET['query'] == "") {
     $query = "SELECT * FROM `studinfo`.`group` WHERE `institut` = '$_GET[i]';" ;
 } else {

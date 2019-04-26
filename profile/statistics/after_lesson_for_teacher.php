@@ -1,4 +1,4 @@
-<div id="smallRight"><h3>Предметы</h3>
+<div id="smallRight"><h3>РџСЂРµРґРјРµС‚С‹</h3>
     <table style="border: none;font-size: 12px;color: #5b5b5b;width: 100%;margin: 10px 0 10px 0;">
         <?
         $journal = new teacherJournal($my->id);

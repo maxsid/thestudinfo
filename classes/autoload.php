@@ -3,29 +3,29 @@ session_start();
 include_once('autoloadClasses.php');
 $browser = new Browser();
 if (!$browser->checkSupport()) {
-    exit('<H3>Сожалеем, но ваш браузер не поддерживается.<br>Рекомендуем скачать последнию версию браузера:<br>
+    exit('<H3>РЎРѕР¶Р°Р»РµРµРј, РЅРѕ РІР°С€ Р±СЂР°СѓР·РµСЂ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ.<br>Р РµРєРѕРјРµРЅРґСѓРµРј СЃРєР°С‡Р°С‚СЊ РїРѕСЃР»РµРґРЅРёСЋ РІРµСЂСЃРёСЋ Р±СЂР°СѓР·РµСЂР°:<br>
         <a href="https://www.google.ru/intl/ru/chrome/browser/">Google Chrome</a> |
         <a href="http://www.opera.com/ru">Opera</a>
         </H3>');
 }
 
 $my = new user();
-$root = $_SERVER['DOCUMENT_ROOT']; //Корень сайта. В include и require пригодится
+$root = $_SERVER['DOCUMENT_ROOT']; //РљРѕСЂРµРЅСЊ СЃР°Р№С‚Р°. Р’ include Рё require РїСЂРёРіРѕРґРёС‚СЃСЏ
 if ($_SERVER['REQUEST_URI'] != '/' and $_SERVER['REQUEST_URI'] != '/index.php') {
     if (!empty($_SESSION['login']) and !empty($_SESSION['password'])) {
         $my->mainUser($_SESSION['login'], $_SESSION['password']);
     } else {header("Location: /");}
 
     /*
-     * Вместо
+     * Р’РјРµСЃС‚Рѕ
      * <script type="text/javascript" src="/styles/js/jquery.js"></script>
-     * поставил
+     * РїРѕСЃС‚Р°РІРёР»
      * <script type="text/javascript" src="/styles/js/jquery-1.8.2.min.js"></script>
-     * они конфликтовали.
+     * РѕРЅРё РєРѕРЅС„Р»РёРєС‚РѕРІР°Р»Рё.
      */
     print <<<HERE
-<title>Студинфо.ру</title>
-<meta content="text/html; charset=WINDOWS-1251" http-equiv="Content-Type" />
+<title>РЎС‚СѓРґРёРЅС„Рѕ.СЂСѓ</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="/styles/css/main.css"/>
 <link rel="stylesheet" type="text/css" href="/styles/css/gstyle_buttons.css"/>
 <link rel="stylesheet" type="text/css" href="/styles/js/ie7/skin.css"/>
@@ -41,16 +41,16 @@ if ($_SERVER['REQUEST_URI'] != '/' and $_SERVER['REQUEST_URI'] != '/index.php') 
 <script type="text/javascript" src="/styles/js/jquery.arcticmodal-0.3.min.js"></script>
 <script type="text/javascript" src="/elements/WYSIWYG/ckeditor.js"></script>
 <script type="text/javascript">
-  var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
-  var delay = 1000; // Задержка прокрутки
+  var top_show = 150; // Р’ РєР°РєРѕРј РїРѕР»РѕР¶РµРЅРёРё РїРѕР»РѕСЃС‹ РїСЂРѕРєСЂСѓС‚РєРё РЅР°С‡РёРЅР°С‚СЊ РїРѕРєР°Р· РєРЅРѕРїРєРё "РќР°РІРµСЂС…"
+  var delay = 1000; // Р—Р°РґРµСЂР¶РєР° РїСЂРѕРєСЂСѓС‚РєРё
   $(document).ready(function() {
-    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
-      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+    $(window).scroll(function () { // РџСЂРё РїСЂРѕРєСЂСѓС‚РєРµ РїРѕРїР°РґР°РµРј РІ СЌС‚Сѓ С„СѓРЅРєС†РёСЋ
+      /* Р’ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РїРѕР»РѕР¶РµРЅРёСЏ РїРѕР»РѕСЃС‹ РїСЂРѕРєСЂСѓРєС‚Рё Рё Р·РЅР°С‡РµРЅРёСЏ top_show, СЃРєСЂС‹РІР°РµРј РёР»Рё РѕС‚РєСЂС‹РІР°РµРј РєРЅРѕРїРєСѓ "РќР°РІРµСЂС…" */
       if ($(this).scrollTop() > top_show) $('#top').fadeIn();
       else $('#top').fadeOut();
     });
-    $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-      /* Плавная прокрутка наверх */
+    $('#top').click(function () { // РџСЂРё РєР»РёРєРµ РїРѕ РєРЅРѕРїРєРµ "РќР°РІРµСЂС…" РїРѕРїР°РґР°РµРј РІ СЌС‚Сѓ С„СѓРЅРєС†РёСЋ
+      /* РџР»Р°РІРЅР°СЏ РїСЂРѕРєСЂСѓС‚РєР° РЅР°РІРµСЂС… */
       $('body, html').animate({
         scrollTop: 0
       }, delay);
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_URI'] != '/' and $_SERVER['REQUEST_URI'] != '/index.php') 
   });
 </script>
 <div id="top"><img src="http://thestudinfo.ru/styles/img/naverh.png"></div>
-<!-- Ниже список
+<!-- РќРёР¶Рµ СЃРїРёСЃРѕРє
 <link rel="stylesheet" type="text/css" href="/styles/css/smoothness-1.8.13/jquery-ui-1.8.13.custom.css">
 <link rel="stylesheet" type="text/css" href="/styles/css/ui.dropdownchecklist.themeroller.css">
 <script type="text/javascript" src="/styles/js/jquery-1.6.1.min.js"></script>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_URI'] != '/' and $_SERVER['REQUEST_URI'] != '/index.php') 
             }
 </script>
 -->
-<script type="text/javascript" charset="windows-1251">
+<script type="text/javascript" charset="utf-8">
     $(function(){
         $("input:checkbox, input:radio, input:file, textarea, select").uniform();
     });

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="text/html; charset=WINDOWS-1251" http-equiv="Content-Type" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link rel="stylesheet" type="text/css" href="styles/css/main.css"/>
 <link rel="stylesheet" type="text/css" href="styles/js/ie7/skin.css"/>
 <script type="text/javascript" src="styles/js/jquery.js"></script>
@@ -56,10 +56,10 @@
 </head>
 
 <body>
-<!--[if lte IE 7]><div class="content-ie"><img src="styles/img/logo-ie.gif"/><br/><br/>Вы используете устаревший браузер!<div style="font-size: 12px">
-Сайт win-beta не поддерживает браузеры Internet Explorer ниже версии 8. Пожалуйста, обновите ваш браузер.</div><br/>
+<!--[if lte IE 7]><div class="content-ie"><img src="styles/img/logo-ie.gif"/><br/><br/>Р’С‹ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ СѓСЃС‚Р°СЂРµРІС€РёР№ Р±СЂР°СѓР·РµСЂ!<div style="font-size: 12px">
+РЎР°Р№С‚ win-beta РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ Р±СЂР°СѓР·РµСЂС‹ Internet Explorer РЅРёР¶Рµ РІРµСЂСЃРёРё 8. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РѕР±РЅРѕРІРёС‚Рµ РІР°С€ Р±СЂР°СѓР·РµСЂ.</div><br/>
 <a href="http://windows.microsoft.com/ru-RU/internet-explorer/downloads/ie"><img src="styles/img/icon-ie-ie.gif"/></a>&nbsp;<a href="http://www.opera.com/download/get.pl?id=33829&thanks=true&sub=true"><img src="styles/img/icon-ie-o.gif"/></a>&nbsp;<a href="http://www.mozilla.org/ru/firefox/"><img src="styles/img/icon-ie-moz.gif"/></a>&nbsp;<a href="http://www.google.ru/chrome"><img src="styles/img/icon-ie-webkit1.gif"/></a>&nbsp;<a href="http://www.apple.com/ru/safari/download/"><img src="styles/img/icon-ie-webkit2.gif"/></a><br/>
-<a href="http://windows.microsoft.com/ru-RU/internet-explorer/downloads/ie-8">или IE 8 для Windows XP</a>
+<a href="http://windows.microsoft.com/ru-RU/internet-explorer/downloads/ie-8">РёР»Рё IE 8 РґР»СЏ Windows XP</a>
 </div>  <div style="display:none"><![endif]-->
 <div class="ololo"><a href="#menu" class="win-beta2"></a></div>
 <script type="text/javascript"> 
@@ -78,7 +78,7 @@ height:500
 
 
 <div id="index">
-  <div id="title">StudInfo информационная база для студентов</div>
+  <div id="title">StudInfo РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅР°СЏ Р±Р°Р·Р° РґР»СЏ СЃС‚СѓРґРµРЅС‚РѕРІ</div>
   <div id="tel">tel: <strong>+7 (908) 235-08-69</strong>&nbsp;&nbsp;|&nbsp;&nbsp;mail: <strong>admin@thestudinfo.ru</strong></div>
 <div id="cont">Coming soon.</div></div>
 
@@ -90,38 +90,38 @@ height:500
 <td>
 <a href="#" class="closeDOMWindow"></a>
 </td>
-<td><img style="margin-top: 12px;" src="styles/img/login-logo.png" alt="Вход"/></td>
+<td><img style="margin-top: 12px;" src="styles/img/login-logo.png" alt="Р’С…РѕРґ"/></td>
 </tr>
 <tr>
 <td></td>
 <td>
 <form action="/profile/authorization.php" method="post">
-<div style="margin-top: 50px;" class="login-text">введите ваш логин:</div>
-<input class="login-form" type="text" name="login" value="" placeholder="Логин"
+<div style="margin-top: 50px;" class="login-text">РІРІРµРґРёС‚Рµ РІР°С€ Р»РѕРіРёРЅ:</div>
+<input class="login-form" type="text" name="login" value="" placeholder="Р›РѕРіРёРЅ"
 <?php
 	
-if (isset($_COOKIE['login'])) //есть ли переменная с логином в COOKIE. Должна быть, если пользователь при предыдущем входе нажал на чекбокс "Запомнить меня"
+if (isset($_COOKIE['login'])) //РµСЃС‚СЊ Р»Рё РїРµСЂРµРјРµРЅРЅР°СЏ СЃ Р»РѕРіРёРЅРѕРј РІ COOKIE. Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ, РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРё РїСЂРµРґС‹РґСѓС‰РµРј РІС…РѕРґРµ РЅР°Р¶Р°Р» РЅР° С‡РµРєР±РѕРєСЃ "Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ"
 {
-//если да, то вставляем в форму ее значение. При этом пользователю отображается, что его логин уже вписан в нужную графу
+//РµСЃР»Рё РґР°, С‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІ С„РѕСЂРјСѓ РµРµ Р·РЅР°С‡РµРЅРёРµ. РџСЂРё СЌС‚РѕРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ, С‡С‚Рѕ РµРіРѕ Р»РѕРіРёРЅ СѓР¶Рµ РІРїРёСЃР°РЅ РІ РЅСѓР¶РЅСѓСЋ РіСЂР°С„Сѓ
 echo ' value="'.$_COOKIE['login'].'"';
 }
 ?>
 >
 <br>
-<div style="margin-top: 10px;" class="login-text">и пароль: (<a href="#">восстановление</a>)</div>
-<input class="login-form" type="password" name="password" value="" placeholder="Пароль" 
+<div style="margin-top: 10px;" class="login-text">Рё РїР°СЂРѕР»СЊ: (<a href="#">РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ</a>)</div>
+<input class="login-form" type="password" name="password" value="" placeholder="РџР°СЂРѕР»СЊ" 
 
 <?php
-if (isset($_COOKIE['password']))//есть ли переменная с паролем в в COOKIE. Должна быть, если пользователь при предыдущем входе нажал на чекбокс "Запомнить меня"
+if (isset($_COOKIE['password']))//РµСЃС‚СЊ Р»Рё РїРµСЂРµРјРµРЅРЅР°СЏ СЃ РїР°СЂРѕР»РµРј РІ РІ COOKIE. Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ, РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРё РїСЂРµРґС‹РґСѓС‰РµРј РІС…РѕРґРµ РЅР°Р¶Р°Р» РЅР° С‡РµРєР±РѕРєСЃ "Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ"
 {
-//если да, то вставляем в форму ее значение. При этом пользователю отображается, что его пароль уже вписан в нужную графу
+//РµСЃР»Рё РґР°, С‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІ С„РѕСЂРјСѓ РµРµ Р·РЅР°С‡РµРЅРёРµ. РџСЂРё СЌС‚РѕРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ, С‡С‚Рѕ РµРіРѕ РїР°СЂРѕР»СЊ СѓР¶Рµ РІРїРёСЃР°РЅ РІ РЅСѓР¶РЅСѓСЋ РіСЂР°С„Сѓ
 echo ' value="'.$_COOKIE['password'].'"';
 }
 ?>
 >
 <br>
-<div style="margin-top: 10px;" class="login-text"><label><input class="login-check" type="checkbox" />чужой компьютер</label></div>
-<button class="login-button" onclick="submit();" type="submit" name="commit" title="вход">вход</button>
+<div style="margin-top: 10px;" class="login-text"><label><input class="login-check" type="checkbox" />С‡СѓР¶РѕР№ РєРѕРјРїСЊСЋС‚РµСЂ</label></div>
+<button class="login-button" onclick="submit();" type="submit" name="commit" title="РІС…РѕРґ">РІС…РѕРґ</button>
  </form>
 </td>
 </tr>

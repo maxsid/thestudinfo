@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 27.05.14
  * Time: 21:53
  */
@@ -15,7 +15,7 @@ include($root . '/profile/leftblock.php');
 print '
          <div id="rightContent">
         <h3>' . $my->getFullName() . '</h3>
-	    <h4>Группа ' . $my->getGroup() . '</h4>
+	    <h4>Р“СЂСѓРїРїР° ' . $my->getGroup() . '</h4>
 	     </div>
 		  ';
 
@@ -35,7 +35,7 @@ print '
 		  ';
 print '<div id="rightContent">';
 switch ($_GET['m']) {
-    case "schedule": ////Содержмиое по студентам
+    case "schedule": ////РЎРѕРґРµСЂР¶РјРёРѕРµ РїРѕ СЃС‚СѓРґРµРЅС‚Р°Рј
         $group = new group($_GET['g']);
         $users = $group->getUsers();
         if ($my->student){
@@ -44,7 +44,7 @@ switch ($_GET['m']) {
             $journal = new teacherJournal($my->id);
         }
         if (count($users) == 0) {
-            print 'В группе нет студентов!';
+            print 'Р’ РіСЂСѓРїРїРµ РЅРµС‚ СЃС‚СѓРґРµРЅС‚РѕРІ!';
             break;
         }
         print '<form method="post" action="receivingEvaluation.php">
@@ -57,11 +57,11 @@ switch ($_GET['m']) {
                     </tr>';
         }
         print '</table>
-        <input type="submit" value="Отправить"/>
+        <input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ"/>
         </form>';
         break;
     case "discipline":
-        print 'Временно недоступно!';
+        print 'Р’СЂРµРјРµРЅРЅРѕ РЅРµРґРѕСЃС‚СѓРїРЅРѕ!';
         break;
 }
 //////////////
@@ -69,7 +69,7 @@ switch ($_GET['m']) {
 </div></div>
 <div class="clear">
     <div id="footer">
-        &copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+        &copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
     </div>
 </div></div>
 <?

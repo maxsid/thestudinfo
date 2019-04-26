@@ -2,8 +2,8 @@
 include_once('../../../../classes/autoloadClasses.php');
 if (!empty($_GET['dn']) && !empty($_GET['dg']) && !empty($_GET['dt']) && !empty($_GET['da'])) {
     if(discipline::registerDiscipline($_GET['dn'],$_GET['dg'],$_GET['dt'],$_GET['da'])){
-        print ('Дисциплина успешно занесена в базу.');
+        print ('Р”РёСЃС†РёРїР»РёРЅР° СѓСЃРїРµС€РЅРѕ Р·Р°РЅРµСЃРµРЅР° РІ Р±Р°Р·Сѓ.');
     } else {
-        print ('Дисциплина не добавлена!');
+        print ('Р”РёСЃС†РёРїР»РёРЅР° РЅРµ РґРѕР±Р°РІР»РµРЅР°!');
     }
-} else {print 'ups... Что-то не дошло';}
+} else {print 'ups... Р§С‚Рѕ-С‚Рѕ РЅРµ РґРѕС€Р»Рѕ';}

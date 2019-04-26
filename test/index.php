@@ -21,25 +21,25 @@ if (!empty($_POST)){
                     $result2 = $anubis->encrypt($result);
                 }
             } else {
-                $result = 'Не выбрана операция (зашифровать или расшифровать?)';
+                $result = 'РќРµ РІС‹Р±СЂР°РЅР° РѕРїРµСЂР°С†РёСЏ (Р·Р°С€РёС„СЂРѕРІР°С‚СЊ РёР»Рё СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ?)';
             }
     } else {
-        $result = 'Текст не введен';
+        $result = 'РўРµРєСЃС‚ РЅРµ РІРІРµРґРµРЅ';
     }
 }
 ?>
 
 
 <form method="post">
-    Ключ:<br>
+    РљР»СЋС‡:<br>
     <input type="text" name="key" style="width: 250px;" value="<? print $key; ?>"><br><br>
-    <input type="radio" name="operation" value="encode" <? if ($operation=='encode'){ print 'checked';} ?> >Зашифровать
-    <input type="radio" name="operation" value="decode" <? if ($operation=='decode'){ print 'checked';} ?>>Расшифровать <br>
-    Исходный текст:<br>
+    <input type="radio" name="operation" value="encode" <? if ($operation=='encode'){ print 'checked';} ?> >Р—Р°С€РёС„СЂРѕРІР°С‚СЊ
+    <input type="radio" name="operation" value="decode" <? if ($operation=='decode'){ print 'checked';} ?>>Р Р°СЃС€РёС„СЂРѕРІР°С‚СЊ <br>
+    РСЃС…РѕРґРЅС‹Р№ С‚РµРєСЃС‚:<br>
     <textarea name="text" style="height: 100px; width: 200px"><? print $text; ?></textarea><br><br>
     <input type="submit"><br><br><br>
-    Результат:<br>
+    Р РµР·СѓР»СЊС‚Р°С‚:<br>
     <textarea name="result" style="height: 100px; width: 200px"><? print $result; ?></textarea><br><br>
-    Обратное действие на результат:<br>
+    РћР±СЂР°С‚РЅРѕРµ РґРµР№СЃС‚РІРёРµ РЅР° СЂРµР·СѓР»СЊС‚Р°С‚:<br>
     <textarea name="result2" style="height: 100px; width: 200px"><? print $result2; ?></textarea>
 </form>

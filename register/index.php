@@ -2,89 +2,89 @@
 <link rel="stylesheet" type="text/css" href="../styles/css/register.css"/>
     <div class="register" onclick="return buttonClick();">
         <fieldset class="row1">
-            <legend>Детали аккаунта
+            <legend>Р”РµС‚Р°Р»Рё Р°РєРєР°СѓРЅС‚Р°
             </legend>
             <p>
                 <label>Email
                 </label>
                 <input id="userEmail" type="text" autocomplete="off"/>
-                <label>Повторите email
+                <label>РџРѕРІС‚РѕСЂРёС‚Рµ email
                 </label>
                 <input type="text"/>
             </p>
         </fieldset>
         <fieldset class="row2">
-            <legend>Персональные детали
+            <legend>РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рµ РґРµС‚Р°Р»Рё
             </legend>
             <p>
-                <label>Вы:</label>
+                <label>Р’С‹:</label>
                 <input type="radio" id="userStudent" name="typeUser" value="radio"/>
-                <label class="gender">Студент</label>
+                <label class="gender">РЎС‚СѓРґРµРЅС‚</label>
                 <input type="radio" id="userTeacher" name="typeUser" value="radio"/>
-                <label class="gender">Преподаватель</label>
+                <label class="gender">РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ</label>
             </p>
 
             <p>
-                <label>Фамилия
+                <label>Р¤Р°РјРёР»РёСЏ
                 </label>
                 <input id="userLastName" type="text" class="long" autocomplete="off"/>
             </p>
 
             <p>
-                <label>Имя
+                <label>РРјСЏ
                 </label>
                 <input id="userName" type="text" class="long" autocomplete="off"/>
             </p>
 
             <p>
-                <label>Отчество
+                <label>РћС‚С‡РµСЃС‚РІРѕ
                 </label>
                 <input id="userPatronymic" type="text" class="long" autocomplete="off"/>
             </p>
 
             <p>
-                <label>Другие данные
+                <label>Р”СЂСѓРіРёРµ РґР°РЅРЅС‹Рµ
                 </label>
                 <textarea id="userOtherData" class="biglong" type="text" style="resize: none;"></textarea>
             </p>
 
         </fieldset>
         <fieldset class="row3">
-            <legend>Информация учебного заведения
+            <legend>РРЅС„РѕСЂРјР°С†РёСЏ СѓС‡РµР±РЅРѕРіРѕ Р·Р°РІРµРґРµРЅРёСЏ
             </legend>
             <p>
-                <label>Наименование:
+                <label>РќР°РёРјРµРЅРѕРІР°РЅРёРµ:
                 </label>
                 <input id="institut" type="text" class="long" autocomplete="off"/>
             </p>
 
             <p>
-                <label>Группа:
+                <label>Р“СЂСѓРїРїР°:
                 </label>
                 <input id="group" type="text" class="long" autocomplete="off" disabled/>
             </p>
 
-            <div class="infobox"><h4>Полезная информация</h4>
+            <div class="infobox"><h4>РџРѕР»РµР·РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</h4>
 
-                <p>После регистрации и проверки пользователя учебным заведением, вы получаете логин и пароль. Относитесь
-                    внимательнее к введенным вами данным. .</p>
+                <p>РџРѕСЃР»Рµ СЂРµРіРёСЃС‚СЂР°С†РёРё Рё РїСЂРѕРІРµСЂРєРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СѓС‡РµР±РЅС‹Рј Р·Р°РІРµРґРµРЅРёРµРј, РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ. РћС‚РЅРѕСЃРёС‚РµСЃСЊ
+                    РІРЅРёРјР°С‚РµР»СЊРЅРµРµ Рє РІРІРµРґРµРЅРЅС‹Рј РІР°РјРё РґР°РЅРЅС‹Рј. .</p>
             </div>
         </fieldset>
         <fieldset class="row4">
-            <legend>Пользовательское соглашение
+            <legend>РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРµ СЃРѕРіР»Р°С€РµРЅРёРµ
             </legend>
             <p class="agreement">
                 <input type="checkbox" value=""/>
-                <label>Я прочитал <a href="#">соглашение сайта</a></label>
+                <label>РЇ РїСЂРѕС‡РёС‚Р°Р» <a href="#">СЃРѕРіР»Р°С€РµРЅРёРµ СЃР°Р№С‚Р°</a></label>
             </p>
         </fieldset>
         <div>
-            <button class="button button-primary" onclick="return false">Регистрация</button>
+            <button class="button button-primary" onclick="return false">Р РµРіРёСЃС‚СЂР°С†РёСЏ</button>
         </div>
     </div>
 <script>
     /**
-     * Created by Максим Сидоров on 07.06.14.
+     * Created by РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ on 07.06.14.
      */
     var inst = '',
         group = '';
@@ -102,7 +102,7 @@
 
     function buttonClick() {
         if (!userTeacher.checked && !userStudent.checked) {
-            $('#message').html('Вы студент или преподаватель? <br> Необходимо выбрать.');
+            $('#message').html('Р’С‹ СЃС‚СѓРґРµРЅС‚ РёР»Рё РїСЂРµРїРѕРґР°РІР°С‚РµР»СЊ? <br> РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ.');
             return;
         }
         var stud = String(userStudent.checked);
@@ -114,28 +114,28 @@
 
         switch ('') {
             case inst:
-                $('#message').html('Не выбрано учебное учреждение.<br>(Необходимо выбрать из выпадающего списка)');
+                $('#message').html('РќРµ РІС‹Р±СЂР°РЅРѕ СѓС‡РµР±РЅРѕРµ СѓС‡СЂРµР¶РґРµРЅРёРµ.<br>(РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР°)');
                 return;
             case name:
-                $('#message').html('Имя не введено.');
+                $('#message').html('РРјСЏ РЅРµ РІРІРµРґРµРЅРѕ.');
                 return;
             case lastname:
-                $('#message').html('Фамилия не введена.');
+                $('#message').html('Р¤Р°РјРёР»РёСЏ РЅРµ РІРІРµРґРµРЅР°.');
                 return;
             case patronymic:
-                $('#message').html('Отчество не введено.');
+                $('#message').html('РћС‚С‡РµСЃС‚РІРѕ РЅРµ РІРІРµРґРµРЅРѕ.');
                 return;
             case email:
-                $('#message').html('Email не введен.');
+                $('#message').html('Email РЅРµ РІРІРµРґРµРЅ.');
                 return;
             case group:
                 if (userStudent.checked) {
-                    $('#message').html('Не выбрана группа.<br>(Необходимо выбрать из выпадающего списка)');
+                    $('#message').html('РќРµ РІС‹Р±СЂР°РЅР° РіСЂСѓРїРїР°.<br>(РќРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РёР· РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР°)');
                     return;
                 }
         }
 
-        $('.register').html('Загрузка...');
+        $('.register').html('Р—Р°РіСЂСѓР·РєР°...');
         $('.register').load('/register/send.php' +
             '?i=' + inst +
             '&t=' + stud +

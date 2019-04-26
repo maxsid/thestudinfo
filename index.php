@@ -5,10 +5,10 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
     if ($my->authorization()) {
         header('Location: profile/');
     } else {
-        $error_message = 'Неверный логин/пароль!<br>';
+        $error_message = 'РќРµРІРµСЂРЅС‹Р№ Р»РѕРіРёРЅ/РїР°СЂРѕР»СЊ!<br>';
     }
 } elseif (empty($_POST['login']) xor empty($_POST['password'])) {
-    $error_message = 'Логин/пароль не введен!<br>';
+    $error_message = 'Р›РѕРіРёРЅ/РїР°СЂРѕР»СЊ РЅРµ РІРІРµРґРµРЅ!<br>';
 }
 
 
@@ -18,9 +18,9 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
 
 <html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" charset="windows-1251" content="text/html">
+    <meta http-equiv="Content-Type" charset="utf-8" content="text/html">
 <head>
-    <title>Главная studinfo</title>
+    <title>Р“Р»Р°РІРЅР°СЏ studinfo</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/css/home.css" type="text/css">
     <style>
@@ -100,23 +100,23 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
 <iframe width="900" height="400" src="//www.youtube.com/embed/tM1n-WduNu0" frameborder="0" allowfullscreen></iframe></div></div>';
         print '<div class="g-hidden-register">
     <div class="box-modal-register" id="exampleModal3">
-        <div class="box-modal_close-register arcticmodal-close">закрыть</div>';
+        <div class="box-modal_close-register arcticmodal-close">Р·Р°РєСЂС‹С‚СЊ</div>';
         include('register/index.php');
         print '</div></div>';
         print '
 			<section id="home-intro" class="home-box" style="height: 365px;">
 		<a onclick="$(\'#exampleModal2\').arcticmodal()" id="#example1">
 
-					<strong><span>смотреть</span></strong>
-					<h2>Презентация проекта для учебных заведений, где все подробно рассказывается.</h2>
+					<strong><span>СЃРјРѕС‚СЂРµС‚СЊ</span></strong>
+					<h2>РџСЂРµР·РµРЅС‚Р°С†РёСЏ РїСЂРѕРµРєС‚Р° РґР»СЏ СѓС‡РµР±РЅС‹С… Р·Р°РІРµРґРµРЅРёР№, РіРґРµ РІСЃРµ РїРѕРґСЂРѕР±РЅРѕ СЂР°СЃСЃРєР°Р·С‹РІР°РµС‚СЃСЏ.</h2>
 				</a>
 			</section>
 
 			<section id="home-signup" class="home-box">
 				<div>
-					<h3>Вы хотите на новый уровень?</h3>
+					<h3>Р’С‹ С…РѕС‚РёС‚Рµ РЅР° РЅРѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ?</h3>
 					<a onclick="$(\'#exampleModal3\').arcticmodal()" id="#example2" class="button button-highlighted">
-						<h4>Подать заявку</h4>
+						<h4>РџРѕРґР°С‚СЊ Р·Р°СЏРІРєСѓ</h4>
 					</a>
 				</div>
 			</section>
@@ -127,35 +127,35 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
                 <?php
                 //if (!empty($_GET['admin']) && $_GET['admin'] == 'debug') {
 
-                print '<h3>Хотите узнать успеваемость?</h3>
+                print '<h3>РҐРѕС‚РёС‚Рµ СѓР·РЅР°С‚СЊ СѓСЃРїРµРІР°РµРјРѕСЃС‚СЊ?</h3>
 
 					<form method="post" novalidate="novalidate" id="login">
-						<input type="text" name="login" placeholder="Ваш id" autocorrect="off" autocapitalize="off" spellcheck="false"';
+						<input type="text" name="login" placeholder="Р’Р°С€ id" autocorrect="off" autocapitalize="off" spellcheck="false"';
 
-                if (isset($_COOKIE['login'])) //есть ли переменная с логином в COOKIE. Должна быть, если пользователь при предыдущем входе нажал на чекбокс "Запомнить меня"
+                if (isset($_COOKIE['login'])) //РµСЃС‚СЊ Р»Рё РїРµСЂРµРјРµРЅРЅР°СЏ СЃ Р»РѕРіРёРЅРѕРј РІ COOKIE. Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ, РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРё РїСЂРµРґС‹РґСѓС‰РµРј РІС…РѕРґРµ РЅР°Р¶Р°Р» РЅР° С‡РµРєР±РѕРєСЃ "Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ"
                 {
-//если да, то вставляем в форму ее значение. При этом пользователю отображается, что его логин уже вписан в нужную графу
+//РµСЃР»Рё РґР°, С‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІ С„РѕСЂРјСѓ РµРµ Р·РЅР°С‡РµРЅРёРµ. РџСЂРё СЌС‚РѕРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ, С‡С‚Рѕ РµРіРѕ Р»РѕРіРёРЅ СѓР¶Рµ РІРїРёСЃР°РЅ РІ РЅСѓР¶РЅСѓСЋ РіСЂР°С„Сѓ
                     echo ' value="' . $_COOKIE['login'] . '"';
                 }
 
                 print '>;
-                <input type="password" name="password" placeholder="Ваш пароль"';
-                if (isset($_COOKIE['password'])) //есть ли переменная с паролем в в COOKIE. Должна быть, если пользователь при предыдущем входе нажал на чекбокс "Запомнить меня"
+                <input type="password" name="password" placeholder="Р’Р°С€ РїР°СЂРѕР»СЊ"';
+                if (isset($_COOKIE['password'])) //РµСЃС‚СЊ Р»Рё РїРµСЂРµРјРµРЅРЅР°СЏ СЃ РїР°СЂРѕР»РµРј РІ РІ COOKIE. Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ, РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРё РїСЂРµРґС‹РґСѓС‰РµРј РІС…РѕРґРµ РЅР°Р¶Р°Р» РЅР° С‡РµРєР±РѕРєСЃ "Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ"
                 {
-//если да, то вставляем в форму ее значение. При этом пользователю отображается, что его пароль уже вписан в нужную графу
+//РµСЃР»Рё РґР°, С‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІ С„РѕСЂРјСѓ РµРµ Р·РЅР°С‡РµРЅРёРµ. РџСЂРё СЌС‚РѕРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ, С‡С‚Рѕ РµРіРѕ РїР°СЂРѕР»СЊ СѓР¶Рµ РІРїРёСЃР°РЅ РІ РЅСѓР¶РЅСѓСЋ РіСЂР°С„Сѓ
                     echo ' value="' . $_COOKIE['password'] . '"';
                 }
 
                 print '>
                 <input name="rememberme" id="rememberme" type="checkbox" value="forever" id="signin-rememberme"
                        checked="true">
-                <label for="signin-rememberme" title="Запомнить меня">Запомнить</label>
-                <input onclick="submit();" title="войти" type="submit" name="commit" value="Войти">
-                <a class="password-help" href="">забыли?</a>
+                <label for="signin-rememberme" title="Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ">Р—Р°РїРѕРјРЅРёС‚СЊ</label>
+                <input onclick="submit();" title="РІРѕР№С‚Рё" type="submit" name="commit" value="Р’РѕР№С‚Рё">
+                <a class="password-help" href="">Р·Р°Р±С‹Р»Рё?</a>
                 </form>';
                 /*}
                 else {
-                    print '<h3>Вход временно недоступен</h3>';
+                    print '<h3>Р’С…РѕРґ РІСЂРµРјРµРЅРЅРѕ РЅРµРґРѕСЃС‚СѓРїРµРЅ</h3>';
 
                 }*/
                 ?>
@@ -164,9 +164,9 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
 
         <section id="home-discover" class="home-box">
             <div>
-                <h3>Хотите узнать больше? Проконсультируйтесь со специалистом SFS GROUP.</h3>
+                <h3>РҐРѕС‚РёС‚Рµ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ? РџСЂРѕРєРѕРЅСЃСѓР»СЊС‚РёСЂСѓР№С‚РµСЃСЊ СЃРѕ СЃРїРµС†РёР°Р»РёСЃС‚РѕРј SFS GROUP.</h3>
                 <a href="/support/client.php?locale=ru" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open(&#039;/support/client.php?locale=ru&amp;url=&#039;+escape(document.location.href)+&#039;&amp;referrer=&#039;+escape(document.referrer), 'mibew', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"
-                   class="button button-primary">Вызвать специалиста</a>
+                   class="button button-primary">Р’С‹Р·РІР°С‚СЊ СЃРїРµС†РёР°Р»РёСЃС‚Р°</a>
             </div>
         </section>
 
@@ -176,8 +176,8 @@ if (!empty($_POST['login']) and !empty($_POST['password'])) {
     <footer id="footer">
         <nav id="footer-navigation">
             <ul>
-                <li id=""><a href="ссылка">Пользовательское соглашение</a></li>
-                <li id=""><a href="ссылка">Как подключить колледж?</a></li>
+                <li id=""><a href="СЃСЃС‹Р»РєР°">РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРµ СЃРѕРіР»Р°С€РµРЅРёРµ</a></li>
+                <li id=""><a href="СЃСЃС‹Р»РєР°">РљР°Рє РїРѕРґРєР»СЋС‡РёС‚СЊ РєРѕР»Р»РµРґР¶?</a></li>
 
             </ul>
             <a class="footer-sts" href="http://sfs.thestudinfo.ru/"></a>

@@ -5,22 +5,22 @@
 
         <div class="more"></div>
         <div class="desc">
-            <center><strong onclick="showModalChangeAvatar();">сменить аватар</strong>
+            <center><strong onclick="showModalChangeAvatar();">СЃРјРµРЅРёС‚СЊ Р°РІР°С‚Р°СЂ</strong>
             </center>
         </div>
     </div>
 
 
     <ul>
-        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/profil.png)" href="/profile/">К профилю</a>
+        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/profil.png)" href="/profile/">Рљ РїСЂРѕС„РёР»СЋ</a>
         </li>
         <li><a style="background-image:url(http://thestudinfo.ru/styles/img/quote.png)"
-               href="/profile/message/incoming.php">Сообщения
-                <? print $my->mail->countNewIncoming() > 0 ? '(' . $my->mail->countNewIncoming() . ' новых)' : ''; ?></a>
+               href="/profile/message/incoming.php">РЎРѕРѕР±С‰РµРЅРёСЏ
+                <? print $my->mail->countNewIncoming() > 0 ? '(' . $my->mail->countNewIncoming() . ' РЅРѕРІС‹С…)' : ''; ?></a>
         </li>
-        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/rasp.png)" href="/journal/schedule/">Расписание</a>
+        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/rasp.png)" href="/journal/schedule/">Р Р°СЃРїРёСЃР°РЅРёРµ</a>
         </li>
-        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/progress.png)" href="/journal/evaluation/">Оценки</a>
+        <li><a style="background-image:url(http://thestudinfo.ru/styles/img/progress.png)" href="/journal/evaluation/">РћС†РµРЅРєРё</a>
         </li>
     </ul>
 </div>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 12.05.14
  * Time: 21:02
  */
@@ -27,7 +27,7 @@ foreach ($groups as $key=>$g)
 print '<div id="news_dvig_menu">
          <ul>
 
-		        <li><a href="/journal/schedule/filling/?g='.$_GET['g'].'">Заполнить расписание </a></li>
+		        <li><a href="/journal/schedule/filling/?g='.$_GET['g'].'">Р—Р°РїРѕР»РЅРёС‚СЊ СЂР°СЃРїРёСЃР°РЅРёРµ </a></li>
 ';
 print $listGroups;
 print ' </ul>

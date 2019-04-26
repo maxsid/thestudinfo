@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим Сидоров
+ * User: РњР°РєСЃРёРј РЎРёРґРѕСЂРѕРІ
  * Date: 12.05.14
  * Time: 21:02
  */
@@ -10,7 +10,7 @@ $groups = $inst->getGroupsInstitut(true,false);
 print '<div id="news_dvig_menu">
          <ul>
 		 
-		        <li>  <a href="">Заполнить расписание </a><br></li>
+		        <li>  <a href="">Р—Р°РїРѕР»РЅРёС‚СЊ СЂР°СЃРїРёСЃР°РЅРёРµ </a><br></li>
 ';
 foreach ($groups as $key=>$g)
 {

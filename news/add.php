@@ -11,10 +11,10 @@ print '
 
          <div id="rightContent">
         <h3>'.$my->getFullName().'</h3>
-	    <h4>Группа '.$my->getGroup().'</h4>
+	    <h4>Р“СЂСѓРїРїР° '.$my->getGroup().'</h4>
 	     </div>
 		 <div id="news_dvig">
-         <h3>Добавление новостей</h3>
+         <h3>Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕСЃС‚РµР№</h3>
          </div>
 		 <div id="rightContent">
 		 		 <div class="otstup_news">
@@ -31,28 +31,28 @@ $inst = new institut($my->institut);
             unset($_POST);
             $news->fillOnLatestNewsUser($my->id);
             echo "<html><head><meta http-equiv='Refresh' content='0; URL=view.php?i=".$news->id."'></head></html>";
-            exit('Новость успешно добавлена!<br>Сейчас произойдет переход к новости.');
+            exit('РќРѕРІРѕСЃС‚СЊ СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅР°!<br>РЎРµР№С‡Р°СЃ РїСЂРѕРёР·РѕР№РґРµС‚ РїРµСЂРµС…РѕРґ Рє РЅРѕРІРѕСЃС‚Рё.');
         } else
         {
-            print 'Произошла ошибка! Новость не добавлена!';
+            print 'РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°! РќРѕРІРѕСЃС‚СЊ РЅРµ РґРѕР±Р°РІР»РµРЅР°!';
         }
     } elseif (isset($_POST['buttonOk']))
     {
-        print 'Что-то не введено!<br>Поля заголовок, описание и группы обязательны для заполнения!';
+        print 'Р§С‚Рѕ-С‚Рѕ РЅРµ РІРІРµРґРµРЅРѕ!<br>РџРѕР»СЏ Р·Р°РіРѕР»РѕРІРѕРє, РѕРїРёСЃР°РЅРёРµ Рё РіСЂСѓРїРїС‹ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ!';
     }
 
     print '<script type="text/javascript" src="../elements/WYSIWYG/ckeditor.js"></script>
 
 <form method="POST">
-<h5>Заголовок новости(макс. 30 символов):</h5>
+<h5>Р—Р°РіРѕР»РѕРІРѕРє РЅРѕРІРѕСЃС‚Рё(РјР°РєСЃ. 30 СЃРёРјРІРѕР»РѕРІ):</h5>
 <input class="inputi"  type="text" name="title" value="" size="112px" maxlength="30" autocomplete="off" required>
-<h5>Описание(макс. 520 символов): </h5>
+<h5>РћРїРёСЃР°РЅРёРµ(РјР°РєСЃ. 520 СЃРёРјРІРѕР»РѕРІ): </h5>
 <input class="inputi"  type="text" name="description" value="" size="112px" maxlength="300" autocomplete="off" required>
 <br>';
 
-//Выводим группы в спике
+//Р’С‹РІРѕРґРёРј РіСЂСѓРїРїС‹ РІ СЃРїРёРєРµ
 print '';
-print '<h5>Группы:</h5> <select id="s1" name="groups[]" size="5" multiple="multiple" required>';
+print '<h5>Р“СЂСѓРїРїС‹:</h5> <select id="s1" name="groups[]" size="5" multiple="multiple" required>';
 $groups = $inst->getGroupsInstitut(true,false);
 foreach ($groups as $group)
 {
@@ -60,15 +60,15 @@ foreach ($groups as $group)
 }
 print '</select> <br>';
 
-//Ввод текста
-print '<h5>Текст: </h5>
+//Р’РІРѕРґ С‚РµРєСЃС‚Р°
+print '<h5>РўРµРєСЃС‚: </h5>
 <textarea name="editor" id="editor1" cols="45" rows="5" value=""></textarea>
 <script type="text/javascript">
    CKEDITOR.replace(\'editor\');
 </script><br>
-<button class="action greenbtn" float="right" type="submit" name="buttonOk"><span class="label">Сохранить</span></button></div></div>
+<button class="action greenbtn" float="right" type="submit" name="buttonOk"><span class="label">РЎРѕС…СЂР°РЅРёС‚СЊ</span></button></div></div>
 </form>
 <div class="clear">
 <div id="footer">
-	&copy; 2013 - 2014 artvaZ studio | <a href="#">студинфо.ру</a> <br>
+	&copy; 2013 - 2014 artvaZ studio | <a href="#">СЃС‚СѓРґРёРЅС„Рѕ.СЂСѓ</a> <br>
 </div>';
